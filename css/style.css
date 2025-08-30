@@ -163,6 +163,12 @@ form {
   outline: none;
   color: #0c0c0c;
 }
+.form-width {
+  max-width: 400px;
+}
+.logo-width {
+  width: 80px;
+}
 .form-bg {
   background: linear-gradient(rgba(16, 90, 250, 0), rgba(250, 116, 255, 0));
   box-sizing: border-box;
@@ -323,6 +329,11 @@ form {
   border-radius: 50%;
   border: 3px solid rgb(223, 176, 215);
   margin: 15px auto;
+}
+.face-equipo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
 }
 /*fan*/
 .card-anime {
