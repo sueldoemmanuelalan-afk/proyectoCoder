@@ -30,8 +30,8 @@ body {
 }
 .body-contacto {
   background: linear-gradient(
-    rgba(183, 2, 255, 0.884),
-    rgba(255, 231, 14, 0.911)
+    rgba(255, 231, 14, 0.911),
+    rgba(183, 2, 255, 0.884)
   );
 }
 .body-login {
@@ -94,7 +94,7 @@ img {
 }
 .index-h1 {
   font-size: 40px;
-  margin-top: 7rem;
+  margin-top: 5.5rem;
 }
 /*h1 contacto,nosotros,productos,login,promociones*/
 .h1-titulo {
@@ -104,6 +104,11 @@ img {
   text-align: center;
   color: rgb(255, 0, 0);
   margin-top: 50px;
+}
+.p-product {
+  margin-top: 200px;
+  text-shadow: -1px -1px 0 #fc02fc, -1px 1px 0 #fc02fc, 1px 1px 0 #fc02fc,
+    1px -1px 0 #fc02fc;
 }
 .header-contenedor-inferior {
   height: 95vh;
@@ -349,12 +354,12 @@ form {
 /*seccion mesa*/
 .mesa {
   background-image: url(../img/mesaoriental.jpeg2.jpg);
-  background-position: center center;
+  background-attachment: fixed;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.mesa {
-  height: 70vh;
+  height: 100%;
+  width: 100%;
 }
 .mesa h4 {
   font-size: 2rem;
