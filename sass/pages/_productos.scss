@@ -1,0 +1,93 @@
+/*main productos*/
+.popular {
+  display: none;
+}
+.popular h2 {
+  color: $color-tres;
+  font-size: 35px;
+  margin-bottom: 45px;
+}
+.popular-content img {
+  width: 150px;
+  margin-right: 1rem;
+}
+.product h2 {
+  font-size: 35px;
+  margin: 50px auto;
+}
+.product hr {
+  border: 2px solid $color-uno;
+  width: 100%;
+  margin-bottom: 40px;
+  opacity: inherit;
+}
+.box-container-1,
+.box-container-2,
+.box-container-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+.box-1,
+.box-2,
+.box-3 {
+  border-radius: 5px;
+  display: none;
+  background-color: $color-dos;
+}
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4) {
+  display: inline-block;
+}
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4) {
+  display: inline-block;
+}
+.box-3:nth-child(1),
+.box-3:nth-child(2),
+.box-3:nth-child(3),
+.box-3:nth-child(4) {
+  display: inline-block;
+}
+.btn-2 {
+  display: inline-block;
+  margin-right: 0;
+  font-size: 17px;
+  box-sizing: border-box;
+  @include buttonStyle($color-uno, $color-tres, $radius-md);
+}
+.load-more {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 2px solid $color-dos;
+  color: $color-tres;
+  font-size: 18px;
+  cursor: pointer;
+  align-self: flex-end;
+  background-color: $color-dos;
+}
+.load-more:hover {
+  background-color: $color-uno;
+  color: $color-dos;
+}
+.product-txt {
+  padding: 50px 30px;
+}
+.product-txt h3 {
+  font-size: 25px;
+  color: $color-tres;
+  margin-bottom: 20px;
+}
+.product-txt p {
+  color: $color-tres;
+  font-size: 18px;
+}
+.product-txt a {
+  text-decoration: none;
+}

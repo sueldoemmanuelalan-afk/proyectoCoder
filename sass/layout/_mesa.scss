@@ -1,0 +1,13 @@
+/*seccion mesa*/
+.mesa {
+  background-image: url(../img/mesaoriental.jpeg2.jpg);
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  @extend %backgroundHeader;
+}
+.mesa h4 {
+  font-size: 2rem;
+  padding: 15px;
+  margin: 20px;
+}

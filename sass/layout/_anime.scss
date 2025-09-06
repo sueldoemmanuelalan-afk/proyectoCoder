@@ -1,0 +1,15 @@
+/*fan*/
+.card-anime {
+  background-color: $color-uno;
+  max-width: 25rem;
+  border: 1px solid $color-dos;
+  border-radius: 1rem;
+  margin: 0 15px;
+}
+.anime-contenedor-flex {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

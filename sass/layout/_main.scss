@@ -1,0 +1,77 @@
+/*main*/
+.p-product {
+  text-shadow: -1px -1px 0 $color-cuatro, -1px 1px 0 $color-cuatro,
+    1px 1px 0 $color-cuatro, 1px -1px 0 $color-cuatro;
+  font-weight: 500;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+.card-productos {
+  background-color: $color-cuatro;
+  max-width: 25rem;
+  border: 1px solid $color-dos;
+}
+/*popular*/
+.popular {
+  display: none;
+}
+.popular h2 {
+  color: $color-tres;
+  font-size: 35px;
+  margin-bottom: 45px;
+}
+.popular-content img {
+  width: 150px;
+  margin-right: 1rem;
+}
+/*Opiniones*/
+.starts {
+  width: 100px;
+}
+.opiniones-content {
+  margin-top: 35px;
+}
+.opiniones {
+  padding: 5px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.opiniones h2 {
+  font-size: 35px;
+  margin: 2rem;
+  line-height: 1;
+}
+.opinion-1,
+.opinion-2,
+.opinion-3,
+.opinion-4,
+.opinion-5,
+.opinion-6 {
+  @extend %opinionesGrid;
+}
+.opinion-1 {
+  @include gridArea(1, 1, 4, 2);
+}
+.opinion-2 {
+  @include gridArea(1, 2, 2, 5);
+}
+.opinion-3 {
+  @include gridArea(3, 2, 4, 4);
+}
+.opinion-4 {
+  @include gridArea(2, 2, 3, 5);
+}
+.opinion-5 {
+  @include gridArea(1, 5, 3, 6);
+}
+.opinion-6 {
+  @include gridArea(3, 4, 4, 6);
+}
+.face {
+  border-radius: 50%;
+  border: 3px solid $color-cuatro;
+  margin: 15px auto;
+  @extend %faceEquipo;
+}

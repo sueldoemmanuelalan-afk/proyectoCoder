@@ -1,0 +1,31 @@
+//mixins
+@mixin flexRow($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin textStyle($size: $font-size-base, $weight: normal, $color: $color-dos) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+@mixin buttonStyle($bg: $color-uno, $color: $color-tres, $radius: $radius-sm) {
+  background-color: $bg;
+  color: $color;
+  padding: 0.5rem 1rem;
+  border-radius: $radius;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: color.scale($bg, $lightness: -10%);
+  }
+}
+@mixin backgroundLinear($color-inicio, $color-fin) {
+  background: linear-gradient($color-inicio, $color-fin);
+}
+@mixin gridArea($gridAreaUno, $gridAreaDos, $gridAreaTres, $gridAreaCuatro) {
+  grid-area: #{$gridAreaUno} / #{$gridAreaDos} / #{$gridAreaTres} / #{$gridAreaCuatro};
+}

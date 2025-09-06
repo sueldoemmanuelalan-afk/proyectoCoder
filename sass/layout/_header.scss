@@ -1,0 +1,58 @@
+/* header todos las pag*/
+.index-header,
+.nosotros-header,
+.promociones-header,
+.contacto-header,
+.login-header,
+.productos-header {
+  background-attachment: fixed;
+  height: 95vh;
+  width: 100%;
+  @extend %backgroundHeader;
+}
+.index-header {
+  background-image: url(../img/headerBackground.jpg);
+}
+.productos-header {
+  background-image: url(../img/imgProductos.png);
+}
+.promociones-header {
+  background-image: url(../img/imgPromociones.jpg);
+}
+.nosotros-header {
+  background-image: url(../img/imgNosotros.jpg);
+}
+.contacto-header {
+  background-image: url(../img/imgContacto.jpg);
+}
+.login-header {
+  background-image: url(../img/imgLogin.jpg);
+}
+/*nav*/
+.navbar {
+  z-index: 1000;
+}
+.navbar-collapse ul li a {
+  @include textStyle($font-size-lg, 600);
+
+  &:hover {
+    color: $color-cuatro;
+  }
+}
+/*h1, parrafo, botones*/
+.index-h1 {
+  font-size: $font-size-xl;
+  margin-top: 5.5rem;
+}
+.header-contenedor-inferior {
+  height: 95vh;
+}
+.parrafo {
+  text-shadow: -1px -1px 0 $color-tres, -1px 1px 0 $color-tres,
+    1px 1px 0 $color-tres, 1px -1px 0 $color-tres;
+}
+.boton-header-inicio,
+.btn {
+  width: 80%;
+  margin: 0 auto 2rem auto;
+}

@@ -1,0 +1,20 @@
+//extend
+%backgroundHeader {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+%opinionesGrid {
+  flex-basis: calc(50% - 25px);
+  background-color: $color-uno;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: $shadow-base;
+  border-radius: $radius-md;
+}
+%faceEquipo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: $radius-full;
+}

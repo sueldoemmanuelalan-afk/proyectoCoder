@@ -1,0 +1,63 @@
+/*@media query*/
+@media (min-width: 991px) {
+  .opiniones-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  .header-contenedor-inferior {
+    @include flexRow(row, center, center);
+  }
+  .productos-contenedor-flex {
+    @include flexRow(row, center, center);
+  }
+  .footer-content {
+    @include flexRow(row, center, space-between);
+  }
+  .index-h1 {
+    font-size: 50px;
+    margin-top: 15rem;
+    @include flexRow(row, center, center);
+  }
+  .popular {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .boton-header-inicio {
+    width: 75%;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    gap: 5rem;
+  }
+  .anime-contenedor-flex {
+    gap: 2rem;
+    margin: 0 auto;
+    width: 90vw;
+    @include flexRow(row, center, center);
+  }
+}
+@media (max-width: 991px) {
+  .card-productos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .popular-content img {
+    width: 120px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-productos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
