@@ -17,10 +17,17 @@
 .opinion-6 {
   flex-basis: calc(50% - 25px);
   background-color: #ff5a2c;
-  padding: 10px 10px;
+  padding: 10px;
   margin: 10px;
   box-shadow: 8px 8px 8px 0 #000000;
   border-radius: 0.8rem;
+}
+
+.face-equipo, .face {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /*estilos generales*/
@@ -37,10 +44,10 @@
 }
 
 .navbar-collapse ul li a {
-  font-weight: 600;
   font-size: 20px;
+  font-weight: 600;
+  color: #000000;
 }
-
 .navbar-collapse ul li a:hover {
   color: #ff95f6;
 }
@@ -131,13 +138,14 @@ img {
 .h1-titulo {
   font-size: 6rem;
   font-weight: bold;
-  padding-top: 10px;
   color: #ff5a2c;
+  padding-top: 10px;
   margin-top: 50px;
 }
 
 .p-product {
   text-shadow: -1px -1px 0 #ff95f6, -1px 1px 0 #ff95f6, 1px 1px 0 #ff95f6, 1px -1px 0 #ff95f6;
+  font-weight: 500;
 }
 
 .header-contenedor-inferior {
@@ -154,7 +162,6 @@ img {
   margin: 0 auto 2rem auto;
 }
 
-/*main*/
 .card {
   margin-bottom: 30px;
 }
@@ -179,12 +186,12 @@ form {
 .input-container > i {
   padding: 14px;
   border-radius: 50%;
-  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
   color: #ffffff;
   position: absolute;
   font-size: 20px;
   top: 7px;
   right: 8px;
+  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
 }
 
 .input-container > input {
@@ -208,17 +215,22 @@ form {
 }
 
 .btn {
-  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
-  padding: 5px 20px;
-  border: 0;
-  box-shadow: 0 0 20px #000000;
-  border-radius: 25px;
-  color: #ffffff;
-  font-size: 1rem;
-  cursor: pointer;
+  box-shadow: 8px 8px 8px 0 #000000;
+  font-size: 16px;
   width: 100%;
   min-width: 120px;
   box-sizing: border-box;
+  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
+  background-color: #ff5a2c;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(255, 66.6184834123, 14.1);
 }
 
 /*main productos*/
@@ -288,18 +300,19 @@ form {
 
 .btn-2 {
   display: inline-block;
-  padding: 5px 25px;
-  border: 2px solid #ff5a2c;
-  border-radius: 25px;
   margin-right: 0;
   font-size: 17px;
-  color: #ffffff;
-  background-color: #000000;
-}
-
-.btn-2:hover {
+  box-sizing: border-box;
   background-color: #ff5a2c;
   color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-2:hover {
+  background-color: rgb(255, 66.6184834123, 14.1);
 }
 
 .load-more {
@@ -363,18 +376,34 @@ form {
   line-height: 1;
 }
 
+.opinion-1 {
+  grid-area: 1/1/4/2;
+}
+
+.opinion-2 {
+  grid-area: 1/2/2/5;
+}
+
+.opinion-3 {
+  grid-area: 3/2/4/4;
+}
+
+.opinion-4 {
+  grid-area: 2/2/3/5;
+}
+
+.opinion-5 {
+  grid-area: 1/5/3/6;
+}
+
+.opinion-6 {
+  grid-area: 3/4/4/6;
+}
+
 .face {
-  width: 70px;
-  height: 70px;
   border-radius: 50%;
   border: 3px solid #ff95f6;
   margin: 15px auto;
-}
-
-.face-equipo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
 }
 
 /*fan*/
@@ -387,7 +416,11 @@ form {
 }
 
 .anime-contenedor-flex {
-  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /*seccion mesa*/
@@ -436,45 +469,34 @@ form {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
   }
-  .opinion-1 {
-    grid-area: 1/1/4/2;
-  }
-  .opinion-2 {
-    grid-area: 1/2/2/5;
-  }
-  .opinion-3 {
-    grid-area: 3/2/4/4;
-  }
-  .opinion-4 {
-    grid-area: 2/2/3/5;
-  }
-  .opinion-5 {
-    grid-area: 1/5/3/6;
-  }
-  .opinion-6 {
-    grid-area: 3/4/4/6;
-  }
   .header-contenedor-inferior {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
   .productos-contenedor-flex {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
   .footer-content {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: space-between;
   }
   .index-h1 {
-    flex-direction: row;
-    justify-content: space-between;
     font-size: 50px;
     margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .popular {
     padding: 100px 0;
-    text-align: center;
     display: flex;
     flex-direction: column;
   }
@@ -485,10 +507,13 @@ form {
     gap: 5rem;
   }
   .anime-contenedor-flex {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     gap: 2rem;
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 991px) {
@@ -496,7 +521,6 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
-    max-width: 350px;
   }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -507,6 +531,11 @@ form {
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  .card-productos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 

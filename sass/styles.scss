@@ -1,17 +1,55 @@
+@use "sass:color";
 //Variables
+
 $color-uno: #ff5a2c;
 $color-dos: #000000;
 $color-tres: #ffffff;
 $color-cuatro: #ff95f6;
-$font-family: "Poppins", sans-serif;
+
+$font-family-base: "Poppins", sans-serif;
+$font-size-base: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 40px;
+$font-size-xxl: 6rem;
+
+$radius-sm: 0.5rem;
+$radius-md: 0.8rem;
+$radius-full: 50%;
+
+$shadow-base: 8px 8px 8px 0 $color-dos;
+$max-width-container: 1200px;
+
 //mixins
+
+@mixin flexRow($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin textStyle($size: $font-size-base, $weight: normal, $color: $color-dos) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+@mixin buttonStyle($bg: $color-uno, $color: $color-tres, $radius: $radius-sm) {
+  background-color: $bg;
+  color: $color;
+  padding: 0.5rem 1rem;
+  border-radius: $radius;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: color.scale($bg, $lightness: -10%);
+  }
+}
 @mixin backgroundLinear($color-inicio, $color-fin) {
   background: linear-gradient($color-inicio, $color-fin);
 }
-
-@mixin flexRow($flex, $justify) {
-  flex-direction: $flex;
-  justify-content: $justify;
+@mixin gridArea($gridAreaUno, $gridAreaDos, $gridAreaTres, $gridAreaCuatro) {
+  grid-area: #{$gridAreaUno} / #{$gridAreaDos} / #{$gridAreaTres} / #{$gridAreaCuatro};
 }
 //extend
 %backgroundHeader {
@@ -19,13 +57,21 @@ $font-family: "Poppins", sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 %opinionesGrid {
   flex-basis: calc(50% - 25px);
   background-color: $color-uno;
-  padding: 10px 10px;
+  padding: 10px;
   margin: 10px;
-  box-shadow: 8px 8px 8px 0 $color-dos;
-  border-radius: 0.8rem;
+  box-shadow: $shadow-base;
+  border-radius: $radius-md;
+}
+
+%faceEquipo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: $radius-full;
 }
 
 /*estilos generales*/
@@ -40,14 +86,15 @@ $font-family: "Poppins", sans-serif;
   z-index: 1000;
 }
 .navbar-collapse ul li a {
-  font-weight: 600;
-  font-size: 20px;
+  @include textStyle($font-size-lg, 600);
+
+  &:hover {
+    color: $color-cuatro;
+  }
 }
-.navbar-collapse ul li a:hover {
-  color: $color-cuatro;
-}
+
 body {
-  font-family: $font-family;
+  font-family: $font-family-base;
   margin-left: 5px;
   margin-right: 5px;
   @include backgroundLinear(
@@ -80,7 +127,7 @@ body {
   );
 }
 .container {
-  max-width: 1200px;
+  max-width: $max-width-container;
   margin: 0 auto;
 }
 img {
@@ -98,9 +145,9 @@ img {
 .login-header,
 .productos-header {
   background-attachment: fixed;
-  @extend %backgroundHeader;
   height: 95vh;
   width: 100%;
+  @extend %backgroundHeader;
 }
 .index-header {
   background-image: url(../img/headerBackground.jpg);
@@ -121,20 +168,21 @@ img {
   background-image: url(../img/imgLogin.jpg);
 }
 .index-h1 {
-  font-size: 40px;
+  font-size: $font-size-xl;
   margin-top: 5.5rem;
 }
+
 /*h1 contacto,nosotros,productos,login,promociones*/
 .h1-titulo {
-  font-size: 6rem;
-  font-weight: bold;
+  @include textStyle($font-size-xxl, bold, $color-uno);
   padding-top: 10px;
-  color: $color-uno;
   margin-top: 50px;
 }
+
 .p-product {
   text-shadow: -1px -1px 0 $color-cuatro, -1px 1px 0 $color-cuatro,
     1px 1px 0 $color-cuatro, 1px -1px 0 $color-cuatro;
+  font-weight: 500;
 }
 .header-contenedor-inferior {
   height: 95vh;
@@ -148,7 +196,7 @@ img {
   width: 80%;
   margin: 0 auto 2rem auto;
 }
-/*main*/
+
 .card {
   margin-bottom: 30px;
 }
@@ -160,9 +208,9 @@ img {
 /*main contacto/login/form*/
 form {
   background-image: url(../img/formbg5.jpg);
-  @extend %backgroundHeader;
   flex-direction: column;
   align-items: center;
+  @extend %backgroundHeader;
 }
 .input-container {
   position: relative;
@@ -170,12 +218,12 @@ form {
 .input-container > i {
   padding: 14px;
   border-radius: 50%;
-  @include backgroundLinear(rgba(247, 94, 49, 1), rgba(241, 169, 17, 1));
   color: $color-tres;
   position: absolute;
   font-size: 20px;
   top: 7px;
   right: 8px;
+  @include backgroundLinear(rgba(247, 94, 49, 1), rgba(241, 169, 17, 1));
 }
 .input-container > input {
   padding: 20px 50px 20px 15px;
@@ -195,17 +243,13 @@ form {
   width: 80px;
 }
 .btn {
-  @include backgroundLinear(rgba(247, 94, 49, 1), rgba(241, 169, 17, 1));
-  padding: 5px 20px;
-  border: 0;
-  box-shadow: 0 0 20px $color-dos;
-  border-radius: 25px;
-  color: $color-tres;
-  font-size: 1rem;
-  cursor: pointer;
+  box-shadow: $shadow-base;
+  font-size: $font-size-base;
   width: 100%;
   min-width: 120px;
   box-sizing: border-box;
+  @include backgroundLinear(rgba(247, 94, 49, 1), rgba(241, 169, 17, 1));
+  @include buttonStyle($color-uno, $color-tres, $radius-md);
 }
 /*main productos*/
 .popular {
@@ -262,19 +306,13 @@ form {
 .box-3:nth-child(4) {
   display: inline-block;
 }
+
 .btn-2 {
   display: inline-block;
-  padding: 5px 25px;
-  border: 2px solid $color-uno;
-  border-radius: 25px;
   margin-right: 0;
   font-size: 17px;
-  color: $color-tres;
-  background-color: $color-dos;
-}
-.btn-2:hover {
-  background-color: $color-uno;
-  color: $color-tres;
+  box-sizing: border-box;
+  @include buttonStyle($color-uno, $color-tres, $radius-md);
 }
 .load-more {
   margin-top: 50px;
@@ -335,17 +373,32 @@ form {
 .opinion-6 {
   @extend %opinionesGrid;
 }
+.opinion-1 {
+  @include gridArea(1, 1, 4, 2);
+}
+.opinion-2 {
+  @include gridArea(1, 2, 2, 5);
+}
+.opinion-3 {
+  @include gridArea(3, 2, 4, 4);
+}
+.opinion-4 {
+  @include gridArea(2, 2, 3, 5);
+}
+.opinion-5 {
+  @include gridArea(1, 5, 3, 6);
+}
+.opinion-6 {
+  @include gridArea(3, 4, 4, 6);
+}
 .face {
-  width: 70px;
-  height: 70px;
   border-radius: 50%;
   border: 3px solid $color-cuatro;
   margin: 15px auto;
+  @extend %faceEquipo;
 }
 .face-equipo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
+  @extend %faceEquipo;
 }
 /*fan*/
 .card-anime {
@@ -356,15 +409,19 @@ form {
   margin: 0 15px;
 }
 .anime-contenedor-flex {
-  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 /*seccion mesa*/
 .mesa {
   background-image: url(../img/mesaoriental.jpeg2.jpg);
   background-attachment: fixed;
-  @extend %backgroundHeader;
   height: 100%;
   width: 100%;
+  @extend %backgroundHeader;
 }
 .mesa h4 {
   font-size: 2rem;
@@ -399,41 +456,22 @@ form {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
   }
-  .opinion-1 {
-    grid-area: 1 / 1 / 4 / 2;
-  }
-  .opinion-2 {
-    grid-area: 1 / 2 / 2 / 5;
-  }
-  .opinion-3 {
-    grid-area: 3 / 2 / 4 / 4;
-  }
-  .opinion-4 {
-    grid-area: 2 / 2 / 3 / 5;
-  }
-  .opinion-5 {
-    grid-area: 1 / 5 / 3 / 6;
-  }
-  .opinion-6 {
-    grid-area: 3 / 4 / 4 / 6;
-  }
   .header-contenedor-inferior {
-    @include flexRow(row, space-between);
+    @include flexRow(row, center, center);
   }
   .productos-contenedor-flex {
-    @include flexRow(row, space-between);
+    @include flexRow(row, center, center);
   }
   .footer-content {
-    @include flexRow(row, space-between);
+    @include flexRow(row, center, space-between);
   }
   .index-h1 {
-    @include flexRow(row, space-between);
     font-size: 50px;
     margin-top: 15rem;
+    @include flexRow(row, center, center);
   }
   .popular {
     padding: 100px 0;
-    text-align: center;
     display: flex;
     flex-direction: column;
   }
@@ -444,9 +482,10 @@ form {
     gap: 5rem;
   }
   .anime-contenedor-flex {
-    @include flexRow(row, space-between);
-    align-items: center;
     gap: 2rem;
+    margin: 0 auto;
+    width: 90vw;
+    @include flexRow(row, center, center);
   }
 }
 @media (max-width: 991px) {
@@ -454,7 +493,6 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
-    max-width: 350px;
   }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -465,5 +503,10 @@ form {
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  .card-productos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
