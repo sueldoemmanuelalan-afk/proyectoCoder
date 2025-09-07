@@ -30,6 +30,7 @@ form, .mesa, .index-header,
   border-radius: 50%;
 }
 
+/*body*/
 body {
   font-family: "Poppins", sans-serif;
   margin-left: 5px;
@@ -262,6 +263,67 @@ body {
   text-decoration: none;
   margin-bottom: 15px;
   transition: all 0.3s ease;
+}
+
+/*main contacto/login/form*/
+form {
+  background-image: url(../img/formbg5.jpg);
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container > i {
+  padding: 14px;
+  border-radius: 50%;
+  color: #ffffff;
+  position: absolute;
+  font-size: 20px;
+  top: 7px;
+  right: 8px;
+  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
+}
+
+.input-container > input {
+  padding: 20px 50px 20px 15px;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 35px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  font-size: 17px;
+  outline: none;
+  color: #000000;
+}
+
+.form-width {
+  max-width: 400px;
+}
+
+.logo-width {
+  width: 80px;
+}
+
+.btn {
+  box-shadow: 8px 8px 8px 0 #000000;
+  font-size: 16px;
+  width: 100%;
+  min-width: 120px;
+  box-sizing: border-box;
+  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
+  background-color: #ff5a2c;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(255, 66.6184834123, 14.1);
 }
 
 /*main contacto/login/form*/
