@@ -1,4 +1,7 @@
 /*main*/
+.main {
+  background-color: #7e60bf;
+}
 .p-product {
   text-shadow: -1px -1px 0 $color-cuatro, -1px 1px 0 $color-cuatro,
     1px 1px 0 $color-cuatro, 1px -1px 0 $color-cuatro;
@@ -40,8 +43,7 @@
 }
 .opiniones {
   padding: 5px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  background-color: #e4b1f0;
 }
 .opiniones h2 {
   font-size: 35px;

@@ -11,7 +11,8 @@
   @extend %backgroundHeader;
 }
 .index-header {
-  background-image: url(../img/headerBackground.jpg);
+  // background-image: url(../img/headerBackground.jpg);
+  background-color: #433878;
 }
 .productos-header {
   background-image: url(../img/imgProductos.png);
@@ -31,6 +32,7 @@
 /*nav*/
 .navbar {
   z-index: 1000;
+  background-color: #ffe1ff;
 }
 .navbar-collapse ul li a {
   @include textStyle($font-size-lg, 600);

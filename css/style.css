@@ -16,9 +16,9 @@ form, .mesa, .index-header,
 .opinion-5,
 .opinion-6 {
   flex-basis: calc(50% - 25px);
-  background-color: rgba(255, 126, 91, 0.8901960784);
-  padding: 10px;
-  margin: 10px;
+  background-color: #433878;
+  padding: 15px;
+  margin: 20px;
   box-shadow: 8px 8px 8px 0 #000000;
   border-radius: 0.8rem;
 }
@@ -33,9 +33,6 @@ form, .mesa, .index-header,
 /*body*/
 body {
   font-family: "Poppins", sans-serif;
-  margin-left: 5px;
-  margin-right: 5px;
-  background: linear-gradient(rgba(252, 143, 100, 0.959), rgba(255, 149, 246, 0.952));
 }
 
 .body-productos {
@@ -71,7 +68,7 @@ body {
 }
 
 .index-header {
-  background-image: url(../img/headerBackground.jpg);
+  background-color: #433878;
 }
 
 .productos-header {
@@ -97,6 +94,7 @@ body {
 /*nav*/
 .navbar {
   z-index: 1000;
+  background-color: #ffe1ff;
 }
 
 .navbar-collapse ul li a {
@@ -129,6 +127,10 @@ body {
 }
 
 /*main*/
+.main {
+  background-color: #7e60bf;
+}
+
 .p-product {
   text-shadow: -1px -1px 0 rgba(253, 174, 253, 0.9098039216), -1px 1px 0 rgba(253, 174, 253, 0.9098039216), 1px 1px 0 rgba(253, 174, 253, 0.9098039216), 1px -1px 0 rgba(253, 174, 253, 0.9098039216);
   font-weight: 500;
@@ -175,8 +177,7 @@ body {
 
 .opiniones {
   padding: 5px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  background-color: #e4b1f0;
 }
 
 .opiniones h2 {
@@ -216,6 +217,10 @@ body {
 }
 
 /*fan*/
+.section-fan {
+  background-color: #7e60bf;
+}
+
 .card-anime {
   background-color: rgba(255, 126, 91, 0.8901960784);
   max-width: 25rem;
@@ -238,6 +243,7 @@ body {
 
 /*seccion mesa*/
 .mesa {
+  background-color: #e4b1f0;
   background-image: url(../img/mesaoriental.jpeg2.jpg);
   background-attachment: fixed;
   height: 100%;
@@ -251,6 +257,10 @@ body {
 }
 
 /*footer*/
+.footer {
+  background-color: #ffe1ff;
+}
+
 .logotipo-footer {
   width: 2.5rem;
   height: 40px;
