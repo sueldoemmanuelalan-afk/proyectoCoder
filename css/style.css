@@ -44,7 +44,6 @@ form, .mesa, .index-header,
 
 .index-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/headerBackground.jpg);
-  background-color: #433878;
 }
 
 .productos-header {
@@ -52,11 +51,11 @@ form, .mesa, .index-header,
 }
 
 .promociones-header {
-  background-image: linear-gradient(rgb(5, 7, 12), rgba(5, 7, 12, 0.3)), url(../img/imgPromociones.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)), url(../img/imgPromociones.jpg);
 }
 
 .nosotros-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)), url(../img/imgNosotros.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)), url(../../img/fotogrupalequipo.jpg);
 }
 
 .contacto-header {
@@ -111,7 +110,7 @@ form, .mesa, .index-header,
 }
 
 .card {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .card-productos {
@@ -393,6 +392,40 @@ form {
 }
 
 /*equipo*/
+.section-quienes-somos {
+  background-color: #433878;
+  height: 100%;
+}
+
+.section-nuestra-historia {
+  background-color: #7e60bf;
+  height: 100%;
+}
+.section-nuestra-historia .card-body {
+  background-color: #ffe1ff;
+}
+.section-nuestra-historia .list-group-item {
+  background-color: #ffe1ff;
+}
+
+.section-nuestro-equipo {
+  background-color: #e4b1f0;
+  height: 100%;
+}
+.section-nuestro-equipo .card {
+  background-color: #433878;
+}
+.section-nuestro-equipo .card-title {
+  color: #e4b1f0;
+}
+.section-nuestro-equipo .card-text {
+  color: #ffffff;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
 /*main productos*/
 .popular {
   display: none;
@@ -532,7 +565,7 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: normal;
   }
   .footer-content {
     display: flex;

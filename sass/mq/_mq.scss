@@ -11,7 +11,7 @@
     @include flexRow(row, center, center);
   }
   .productos-contenedor-flex {
-    @include flexRow(row, center, center);
+    @include flexRow(row, center, normal);
   }
   .footer-content {
     @include flexRow(row, center, space-between);

@@ -8,3 +8,33 @@
 .face-equipo {
   @extend %faceEquipo;
 }
+.section-quienes-somos {
+  background-color: $color-uno;
+  height: 100%;
+}
+.section-nuestra-historia {
+  background-color: $color-cuatro;
+  height: 100%;
+  .card-body {
+    background-color: $color-seis;
+  }
+  .list-group-item {
+    background-color: $color-seis;
+  }
+}
+.section-nuestro-equipo {
+  background-color: $color-cinco;
+  height: 100%;
+  .card {
+    background-color: $color-uno;
+  }
+  .card-title {
+    color: $color-cinco;
+  }
+  .card-text {
+    color: $color-tres;
+  }
+}
+.card {
+  margin-bottom: 50px;
+}
