@@ -1,13 +1,21 @@
 /*main*/
-
+.main {
+  background-color: $color-uno;
+}
 .card {
   margin-bottom: 30px;
 }
 .card-productos {
   background-color: $color-seis;
   max-width: 25rem;
-  border: 1px solid $color-uno;
+  border: 2px solid $color-dos;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }
+
 /*popular*/
 .popular {
   display: none;
@@ -30,8 +38,7 @@
 }
 .opiniones {
   padding: 5px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  background-color: $color-cinco;
 }
 .opiniones h2 {
   font-size: 35px;

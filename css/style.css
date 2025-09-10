@@ -92,10 +92,6 @@ form, .mesa, .index-header,
   height: 95vh;
 }
 
-.parrafo {
-  text-shadow: -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff;
-}
-
 .boton-header-inicio,
 .btn {
   width: 80%;
@@ -103,6 +99,10 @@ form, .mesa, .index-header,
 }
 
 /*main*/
+.main {
+  background-color: #433878;
+}
+
 .card {
   margin-bottom: 30px;
 }
@@ -110,7 +110,11 @@ form, .mesa, .index-header,
 .card-productos {
   background-color: #ffe1ff;
   max-width: 25rem;
-  border: 1px solid #433878;
+  border: 2px solid #000000;
+  transition: transform 0.5s;
+}
+.card-productos:hover {
+  transform: scale(1.03);
 }
 
 /*popular*/
@@ -140,8 +144,7 @@ form, .mesa, .index-header,
 
 .opiniones {
   padding: 5px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  background-color: #e4b1f0;
 }
 
 .opiniones h2 {
@@ -181,12 +184,20 @@ form, .mesa, .index-header,
 }
 
 /*fan*/
+.section-fan {
+  background-color: #7e60bf;
+}
+
 .card-anime {
   background-color: #ffe1ff;
   max-width: 25rem;
   border: 1px solid #000000;
   border-radius: 1rem;
   margin: 0 15px;
+  transition: transform 0.5s;
+}
+.card-anime:hover {
+  transform: scale(1.03);
 }
 
 .anime-contenedor-flex {
@@ -212,6 +223,10 @@ form, .mesa, .index-header,
 }
 
 /*footer*/
+.footer {
+  background-color: #ffe1ff;
+}
+
 .logotipo-footer {
   width: 2.5rem;
   height: 40px;
