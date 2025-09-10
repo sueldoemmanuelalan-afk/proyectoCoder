@@ -11,9 +11,13 @@
   @extend %backgroundHeader;
 }
 .index-header {
+<<<<<<< HEAD
   background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
     url(../img/headerBackground.jpg);
   background-color: #433878;
+=======
+  background-image: url(../img/headerBackground.jpg);
+>>>>>>> parent of 0e71ee6 (probando paletas de colores y commitear seguido)
 }
 .productos-header {
   background-image: url(../img/imgProductos.png);
@@ -33,7 +37,6 @@
 /*nav*/
 .navbar {
   z-index: 1000;
-  background-color: #ffe1ff;
 }
 .navbar-collapse ul li a {
   @include textStyle($font-size-lg, 600);

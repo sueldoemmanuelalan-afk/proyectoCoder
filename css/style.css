@@ -1,4 +1,5 @@
-form, .index-header,
+form,
+.index-header,
 .nosotros-header,
 .promociones-header,
 .contacto-header,
@@ -16,14 +17,15 @@ form, .index-header,
 .opinion-5,
 .opinion-6 {
   flex-basis: calc(50% - 25px);
-  background-color: #433878;
-  padding: 15px;
-  margin: 20px;
+  background-color: rgba(255, 126, 91, 0.8901960784);
+  padding: 10px;
+  margin: 10px;
   box-shadow: 8px 8px 8px 0 #000000;
   border-radius: 0.8rem;
 }
 
-.face-equipo, .face {
+.face-equipo,
+.face {
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -33,6 +35,12 @@ form, .index-header,
 /*body*/
 body {
   font-family: "Poppins", sans-serif;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: linear-gradient(
+    rgba(252, 143, 100, 0.959),
+    rgba(255, 149, 246, 0.952)
+  );
 }
 
 .body-productos {
@@ -40,7 +48,10 @@ body {
 }
 
 .body-contacto {
-  background: linear-gradient(rgba(255, 231, 14, 0.911), rgba(183, 2, 255, 0.884));
+  background: linear-gradient(
+    rgba(255, 231, 14, 0.911),
+    rgba(183, 2, 255, 0.884)
+  );
 }
 
 .body-login {
@@ -48,11 +59,17 @@ body {
 }
 
 .body-promociones {
-  background: linear-gradient(rgba(45, 29, 189, 0.973), rgba(255, 149, 246, 0.952));
+  background: linear-gradient(
+    rgba(45, 29, 189, 0.973),
+    rgba(255, 149, 246, 0.952)
+  );
 }
 
 .body-nosotros {
-  background: linear-gradient(rgba(7, 123, 255, 0.884), rgba(113, 172, 79, 0.911));
+  background: linear-gradient(
+    rgba(7, 123, 255, 0.884),
+    rgba(113, 172, 79, 0.911)
+  );
 }
 
 /* header todos las pag*/
@@ -68,8 +85,11 @@ body {
 }
 
 .index-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/headerBackground.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
+    url(../img/headerBackground.jpg);
   background-color: #433878;
+
+  background-image: url(../img/headerBackground.jpg);
 }
 
 .productos-header {
@@ -95,7 +115,6 @@ body {
 /*nav*/
 .navbar {
   z-index: 1000;
-  background-color: #ffe1ff;
 }
 
 .navbar-collapse ul li a {
@@ -118,7 +137,8 @@ body {
 }
 
 .parrafo {
-  text-shadow: -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff;
+  text-shadow: -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff,
+    1px -1px 0 #ffffff;
 }
 
 .boton-header-inicio,
@@ -128,12 +148,9 @@ body {
 }
 
 /*main*/
-.main {
-  background-color: #7e60bf;
-}
-
 .p-product {
-  text-shadow: -1px -1px 0 #7e60bf, -1px 1px 0 #7e60bf, 1px 1px 0 #7e60bf, 1px -1px 0 #7e60bf;
+  text-shadow: -1px -1px 0 #7e60bf, -1px 1px 0 #7e60bf, 1px 1px 0 #7e60bf,
+    1px -1px 0 #7e60bf;
   font-weight: 500;
 }
 
@@ -178,7 +195,8 @@ body {
 
 .opiniones {
   padding: 5px;
-  background-color: #e4b1f0;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .opiniones h2 {
@@ -218,10 +236,6 @@ body {
 }
 
 /*fan*/
-.section-fan {
-  background-color: #7e60bf;
-}
-
 .card-anime {
   background-color: #ffe1ff;
   max-width: 25rem;
@@ -245,9 +259,14 @@ body {
 /*seccion mesa*/
 .mesa {
   background-color: #e4b1f0;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../img/mesaoriental.jpeg2.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)),
+    url(../img/mesaoriental.jpeg2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
+
+  background-image: url(../img/mesaoriental.jpeg2.jpg);
+  background-attachment: fixed;
+
   height: 100%;
 }
 
@@ -258,10 +277,6 @@ body {
 }
 
 /*footer*/
-.footer {
-  background-color: #ffe1ff;
-}
-
 .logotipo-footer {
   width: 2.5rem;
   height: 40px;
