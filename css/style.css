@@ -1,4 +1,4 @@
-form, .mesa, .index-header,
+form, .index-header,
 .nosotros-header,
 .promociones-header,
 .contacto-header,
@@ -68,6 +68,7 @@ body {
 }
 
 .index-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/headerBackground.jpg);
   background-color: #433878;
 }
 
@@ -103,7 +104,7 @@ body {
   color: #000000;
 }
 .navbar-collapse ul li a:hover {
-  color: rgba(253, 174, 253, 0.9098039216);
+  color: #7e60bf;
 }
 
 /*h1, parrafo, botones*/
@@ -132,7 +133,7 @@ body {
 }
 
 .p-product {
-  text-shadow: -1px -1px 0 rgba(253, 174, 253, 0.9098039216), -1px 1px 0 rgba(253, 174, 253, 0.9098039216), 1px 1px 0 rgba(253, 174, 253, 0.9098039216), 1px -1px 0 rgba(253, 174, 253, 0.9098039216);
+  text-shadow: -1px -1px 0 #7e60bf, -1px 1px 0 #7e60bf, 1px 1px 0 #7e60bf, 1px -1px 0 #7e60bf;
   font-weight: 500;
 }
 
@@ -141,7 +142,7 @@ body {
 }
 
 .card-productos {
-  background-color: rgba(253, 174, 253, 0.9098039216);
+  background-color: #e4b1f0;
   max-width: 25rem;
   border: 1px solid #000000;
   transition: transform 0.5s;
@@ -212,7 +213,7 @@ body {
 
 .face {
   border-radius: 50%;
-  border: 3px solid rgba(253, 174, 253, 0.9098039216);
+  border: 3px solid #7e60bf;
   margin: 15px auto;
 }
 
@@ -222,7 +223,7 @@ body {
 }
 
 .card-anime {
-  background-color: rgba(255, 126, 91, 0.8901960784);
+  background-color: #ffe1ff;
   max-width: 25rem;
   border: 1px solid #000000;
   border-radius: 1rem;
@@ -244,10 +245,10 @@ body {
 /*seccion mesa*/
 .mesa {
   background-color: #e4b1f0;
-  background-image: url(../img/mesaoriental.jpeg2.jpg);
-  background-attachment: fixed;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../img/mesaoriental.jpeg2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   height: 100%;
-  width: 100%;
 }
 
 .mesa h4 {
@@ -274,7 +275,7 @@ body {
 
 .footer-links h4 {
   margin-bottom: 25px;
-  border-bottom: 2px solid rgba(255, 126, 91, 0.8901960784);
+  border-bottom: 2px solid #433878;
 }
 
 .footer-links ul li a {
@@ -332,7 +333,7 @@ form {
   min-width: 120px;
   box-sizing: border-box;
   background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
-  background-color: rgba(255, 126, 91, 0.8901960784);
+  background-color: #433878;
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 0.8rem;
@@ -341,7 +342,7 @@ form {
   transition: background-color 0.3s ease;
 }
 .btn:hover {
-  background-color: rgba(255, 98.7841463415, 56.4, 0.8901960784);
+  background-color: rgb(60.3, 50.4, 108);
 }
 
 /*main contacto/login/form*/
@@ -393,7 +394,7 @@ form {
   min-width: 120px;
   box-sizing: border-box;
   background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
-  background-color: rgba(255, 126, 91, 0.8901960784);
+  background-color: #433878;
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 0.8rem;
@@ -402,14 +403,14 @@ form {
   transition: background-color 0.3s ease;
 }
 .btn:hover {
-  background-color: rgba(255, 98.7841463415, 56.4, 0.8901960784);
+  background-color: rgb(60.3, 50.4, 108);
 }
 
 /*h1 contacto,nosotros,productos,login,promociones*/
 .h1-titulo {
   font-size: 6rem;
   font-weight: bold;
-  color: rgba(255, 126, 91, 0.8901960784);
+  color: #433878;
   padding-top: 10px;
   margin-top: 50px;
 }
@@ -437,7 +438,7 @@ form {
 }
 
 .product hr {
-  border: 2px solid rgba(255, 126, 91, 0.8901960784);
+  border: 2px solid #433878;
   width: 100%;
   margin-bottom: 40px;
   opacity: inherit;
@@ -485,7 +486,7 @@ form {
   margin-right: 0;
   font-size: 17px;
   box-sizing: border-box;
-  background-color: rgba(255, 126, 91, 0.8901960784);
+  background-color: #433878;
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 0.8rem;
@@ -494,7 +495,7 @@ form {
   transition: background-color 0.3s ease;
 }
 .btn-2:hover {
-  background-color: rgba(255, 98.7841463415, 56.4, 0.8901960784);
+  background-color: rgb(60.3, 50.4, 108);
 }
 
 .load-more {
@@ -511,7 +512,7 @@ form {
 }
 
 .load-more:hover {
-  background-color: rgba(255, 126, 91, 0.8901960784);
+  background-color: #433878;
   color: #000000;
 }
 
