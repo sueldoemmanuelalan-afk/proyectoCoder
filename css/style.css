@@ -1,5 +1,4 @@
-form,
-.index-header,
+form, .mesa, .index-header,
 .nosotros-header,
 .promociones-header,
 .contacto-header,
@@ -17,59 +16,18 @@ form,
 .opinion-5,
 .opinion-6 {
   flex-basis: calc(50% - 25px);
-  background-color: #ff5a2c;
+  background-color: #433878;
   padding: 10px;
   margin: 10px;
   box-shadow: 8px 8px 8px 0 #000000;
   border-radius: 0.8rem;
 }
 
-.face-equipo,
-.face {
+.face-equipo, .face {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-}
-
-/*body*/
-body {
-  font-family: "Poppins", sans-serif;
-  margin-left: 5px;
-  margin-right: 5px;
-  background: linear-gradient(
-    rgba(252, 143, 100, 0.959),
-    rgba(255, 149, 246, 0.952)
-  );
-}
-
-.body-productos {
-  background: linear-gradient(rgba(7, 6, 14, 0.973), rgba(243, 86, 13, 0.966));
-}
-
-.body-contacto {
-  background: linear-gradient(
-    rgba(255, 231, 14, 0.911),
-    rgba(183, 2, 255, 0.884)
-  );
-}
-
-.body-login {
-  background: linear-gradient(rgba(0, 0, 0, 0.884), rgba(185, 76, 25, 0.911));
-}
-
-.body-promociones {
-  background: linear-gradient(
-    rgba(45, 29, 189, 0.973),
-    rgba(255, 149, 246, 0.952)
-  );
-}
-
-.body-nosotros {
-  background: linear-gradient(
-    rgba(7, 123, 255, 0.884),
-    rgba(113, 172, 79, 0.911)
-  );
 }
 
 /* header todos las pag*/
@@ -85,36 +43,34 @@ body {
 }
 
 .index-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
-    url(../img/headerBackground.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/headerBackground.jpg);
   background-color: #433878;
-
-  background-image: url(../img/headerBackground.jpg);
 }
 
 .productos-header {
-  background-image: url(../img/imgProductos.png);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/imgProductos.png);
 }
 
 .promociones-header {
-  background-image: url(../img/imgPromociones.jpg);
+  background-image: linear-gradient(rgb(5, 7, 12), rgba(5, 7, 12, 0.3)), url(../img/imgPromociones.jpg);
 }
 
 .nosotros-header {
-  background-image: url(../img/imgNosotros.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)), url(../img/imgNosotros.jpg);
 }
 
 .contacto-header {
-  background-image: url(../img/imgContacto.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/imgContacto.jpg);
 }
 
 .login-header {
-  background-image: url(../img/imgLogin.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)), url(../img/imgLogin.jpg);
 }
 
 /*nav*/
 .navbar {
   z-index: 1000;
+  background-color: #ffe1ff;
 }
 
 .navbar-collapse ul li a {
@@ -124,7 +80,6 @@ body {
 }
 .navbar-collapse ul li a:hover {
   color: #7e60bf;
-  color: #ff95f6;
 }
 
 /*h1, parrafo, botones*/
@@ -138,8 +93,7 @@ body {
 }
 
 .parrafo {
-  text-shadow: -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff,
-    1px -1px 0 #ffffff;
+  text-shadow: -1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px -1px 0 #ffffff;
 }
 
 .boton-header-inicio,
@@ -149,23 +103,14 @@ body {
 }
 
 /*main*/
-.p-product {
-  text-shadow: -1px -1px 0 #7e60bf, -1px 1px 0 #7e60bf, 1px 1px 0 #7e60bf,
-    1px -1px 0 #7e60bf;
-  text-shadow: -1px -1px 0 #ff95f6, -1px 1px 0 #ff95f6, 1px 1px 0 #ff95f6,
-    1px -1px 0 #ff95f6;
-  font-weight: 500;
-}
-
 .card {
   margin-bottom: 30px;
 }
 
 .card-productos {
-  background-color: #ff95f6;
-  background-color: #e4b1f0;
+  background-color: #ffe1ff;
   max-width: 25rem;
-  border: 1px solid #000000;
+  border: 1px solid #433878;
 }
 
 /*popular*/
@@ -231,15 +176,13 @@ body {
 
 .face {
   border-radius: 50%;
-  border: 3px solid #7e60bf;
-  border: 3px solid #ff95f6;
+  border: 3px solid #ffe1ff;
   margin: 15px auto;
 }
 
 /*fan*/
 .card-anime {
   background-color: #ffe1ff;
-  background-color: #ff5a2c;
   max-width: 25rem;
   border: 1px solid #000000;
   border-radius: 1rem;
@@ -257,15 +200,9 @@ body {
 /*seccion mesa*/
 .mesa {
   background-color: #e4b1f0;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)),
-    url(../img/mesaoriental.jpeg2.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  background-image: url(../img/mesaoriental.jpeg2.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../img/mesaoriental.jpeg2.jpg);
   background-attachment: fixed;
-
-  height: 100%;
+  height: 40vh;
 }
 
 .mesa h4 {
@@ -289,7 +226,6 @@ body {
 .footer-links h4 {
   margin-bottom: 25px;
   border-bottom: 2px solid #433878;
-  border-bottom: 2px solid #ff5a2c;
 }
 
 .footer-links ul li a {
@@ -317,7 +253,7 @@ form {
   font-size: 20px;
   top: 7px;
   right: 8px;
-  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
+  background: linear-gradient(#7e60bf, #ffe1ff);
 }
 
 .input-container > input {
@@ -346,9 +282,8 @@ form {
   width: 100%;
   min-width: 120px;
   box-sizing: border-box;
-  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
+  background: linear-gradient(#7e60bf, #ffe1ff);
   background-color: #433878;
-  background-color: #ff5a2c;
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 0.8rem;
@@ -358,7 +293,6 @@ form {
 }
 .btn:hover {
   background-color: rgb(60.3, 50.4, 108);
-  background-color: rgb(255, 66.6184834123, 14.1);
 }
 
 /*main contacto/login/form*/
@@ -380,7 +314,7 @@ form {
   font-size: 20px;
   top: 7px;
   right: 8px;
-  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
+  background: linear-gradient(#7e60bf, #ffe1ff);
 }
 
 .input-container > input {
@@ -409,9 +343,8 @@ form {
   width: 100%;
   min-width: 120px;
   box-sizing: border-box;
-  background: linear-gradient(rgb(247, 94, 49), rgb(241, 169, 17));
+  background: linear-gradient(#7e60bf, #ffe1ff);
   background-color: #433878;
-  background-color: #ff5a2c;
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 0.8rem;
@@ -421,16 +354,14 @@ form {
 }
 .btn:hover {
   background-color: rgb(60.3, 50.4, 108);
-  background-color: rgb(255, 66.6184834123, 14.1);
 }
 
 /*h1 contacto,nosotros,productos,login,promociones*/
 .h1-titulo {
-  font-size: 6rem;
+  font-size: 20px;
   font-weight: bold;
-  color: #433878;
-  color: #ff5a2c;
-  padding-top: 10px;
+  color: #ffffff;
+  padding-top: 50px;
   margin-top: 50px;
 }
 
@@ -457,8 +388,7 @@ form {
 }
 
 .product hr {
-  border: 2px solid #433878;
-  border: 2px solid #ff5a2c;
+  border: 2px solid #7e60bf;
   width: 100%;
   margin-bottom: 40px;
   opacity: inherit;
@@ -506,18 +436,16 @@ form {
   margin-right: 0;
   font-size: 17px;
   box-sizing: border-box;
-  background-color: #433878;
-  background-color: #ff5a2c;
-  color: #ffffff;
+  background-color: #7e60bf;
+  color: #ffe1ff;
   padding: 0.5rem 1rem;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .btn-2:hover {
-  background-color: rgb(60.3, 50.4, 108);
-  background-color: rgb(255, 66.6184834123, 14.1);
+  background-color: rgb(109.3977578475, 75.5367713004, 182.7632286996);
 }
 
 .load-more {
@@ -525,27 +453,27 @@ form {
   display: inline-block;
   padding: 10px 25px;
   border-radius: 25px;
-  border: 2px solid #000000;
-  color: #ffffff;
+  border: 2px solid #7e60bf;
+  color: #000000;
   font-size: 18px;
   cursor: pointer;
   align-self: flex-end;
-  background-color: #000000;
+  background-color: #ffe1ff;
 }
 
 .load-more:hover {
-  background-color: #433878;
-  background-color: #ff5a2c;
-  color: #000000;
+  background-color: #7e60bf;
+  color: #ffffff;
 }
 
 .product-txt {
   padding: 50px 30px;
+  background-color: #433878;
 }
 
 .product-txt h3 {
   font-size: 25px;
-  color: #ffffff;
+  color: #ffe1ff;
   margin-bottom: 20px;
 }
 
@@ -657,6 +585,10 @@ img {
 .logo {
   width: 70px;
   margin-bottom: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

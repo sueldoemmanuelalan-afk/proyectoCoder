@@ -1,17 +1,12 @@
 /*main*/
-.p-product {
-  text-shadow: -1px -1px 0 $color-cuatro, -1px 1px 0 $color-cuatro,
-    1px 1px 0 $color-cuatro, 1px -1px 0 $color-cuatro;
-  font-weight: 500;
-}
 
 .card {
   margin-bottom: 30px;
 }
 .card-productos {
-  background-color: #e4b1f0;
+  background-color: $color-seis;
   max-width: 25rem;
-  border: 1px solid $color-dos;
+  border: 1px solid $color-uno;
 }
 /*popular*/
 .popular {
@@ -71,7 +66,7 @@
 }
 .face {
   border-radius: 50%;
-  border: 3px solid $color-cuatro;
+  border: 3px solid $color-seis;
   margin: 15px auto;
   @extend %faceEquipo;
 }

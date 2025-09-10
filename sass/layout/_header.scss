@@ -16,23 +16,29 @@
   background-color: #433878;
 }
 .productos-header {
-  background-image: url(../img/imgProductos.png);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
+    url(../img/imgProductos.png);
 }
 .promociones-header {
-  background-image: url(../img/imgPromociones.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 1.1), rgba(5, 7, 12, 0.3)),
+    url(../img/imgPromociones.jpg);
 }
 .nosotros-header {
-  background-image: url(../img/imgNosotros.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)),
+    url(../img/imgNosotros.jpg);
 }
 .contacto-header {
-  background-image: url(../img/imgContacto.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
+    url(../img/imgContacto.jpg);
 }
 .login-header {
-  background-image: url(../img/imgLogin.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)),
+    url(../img/imgLogin.jpg);
 }
 /*nav*/
 .navbar {
   z-index: 1000;
+  background-color: $color-seis;
 }
 .navbar-collapse ul li a {
   @include textStyle($font-size-lg, 600);

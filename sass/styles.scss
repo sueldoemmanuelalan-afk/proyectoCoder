@@ -2,7 +2,6 @@
 @import "./utilities/variables";
 @import "./utilities/mixixns";
 @import "./utilities/extends";
-@import "./layout/body";
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/anime";
@@ -33,4 +32,7 @@ img {
 .logo {
   width: 70px;
   margin-bottom: auto;
+}
+body {
+  font-family: $font-family-base;
 }

@@ -16,7 +16,7 @@
   margin: 50px auto;
 }
 .product hr {
-  border: 2px solid $color-uno;
+  border: 2px solid $color-cuatro;
   width: 100%;
   margin-bottom: 40px;
   opacity: inherit;
@@ -58,30 +58,35 @@
   margin-right: 0;
   font-size: 17px;
   box-sizing: border-box;
-  @include buttonStyle($color-uno, $color-tres, $radius-md);
+  @include buttonStyle(
+    $bg: $color-cuatro,
+    $color: $color-seis,
+    $radius: $radius-sm
+  );
 }
 .load-more {
   margin-top: 50px;
   display: inline-block;
   padding: 10px 25px;
   border-radius: 25px;
-  border: 2px solid $color-dos;
-  color: $color-tres;
+  border: 2px solid $color-cuatro;
+  color: $color-dos;
   font-size: 18px;
   cursor: pointer;
   align-self: flex-end;
-  background-color: $color-dos;
+  background-color: $color-seis;
 }
 .load-more:hover {
-  background-color: $color-uno;
-  color: $color-dos;
+  background-color: $color-cuatro;
+  color: $color-tres;
 }
 .product-txt {
   padding: 50px 30px;
+  background-color: $color-uno;
 }
 .product-txt h3 {
   font-size: 25px;
-  color: $color-tres;
+  color: $color-seis;
   margin-bottom: 20px;
 }
 .product-txt p {

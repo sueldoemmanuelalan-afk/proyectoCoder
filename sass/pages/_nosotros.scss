@@ -1,7 +1,7 @@
 /*h1 contacto,nosotros,productos,login,promociones*/
 .h1-titulo {
-  @include textStyle($font-size-xxl, bold, $color-uno);
-  padding-top: 10px;
+  @include textStyle($font-size-lg, bold, $color-tres);
+  padding-top: 50px;
   margin-top: 50px;
 }
 /*equipo*/
