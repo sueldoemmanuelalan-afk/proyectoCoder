@@ -17,8 +17,8 @@ form, .mesa, .index-header,
 .opinion-6 {
   flex-basis: calc(50% - 25px);
   background-color: #433878;
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 20px;
   box-shadow: 8px 8px 8px 0 #000000;
   border-radius: 0.8rem;
 }
@@ -96,6 +96,13 @@ form, .mesa, .index-header,
 .btn {
   width: 80%;
   margin: 0 auto 2rem auto;
+}
+
+.boton-header-inicio a {
+  transition: transform 0.5s;
+}
+.boton-header-inicio a:hover {
+  transform: scale(1.03);
 }
 
 /*main*/
@@ -213,7 +220,7 @@ form, .mesa, .index-header,
   background-color: #e4b1f0;
   background-image: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)), url(../img/mesaoriental.jpeg2.jpg);
   background-attachment: fixed;
-  height: 40vh;
+  height: 100%;
 }
 
 .mesa h4 {
@@ -246,7 +253,12 @@ form, .mesa, .index-header,
 .footer-links ul li a {
   text-decoration: none;
   margin-bottom: 15px;
+  color: #433878;
   transition: all 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #e4b1f0;
+  padding-left: 6px;
 }
 
 /*main contacto/login/form*/

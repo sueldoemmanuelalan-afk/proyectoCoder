@@ -60,3 +60,10 @@
   width: 80%;
   margin: 0 auto 2rem auto;
 }
+.boton-header-inicio a {
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
