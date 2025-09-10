@@ -12,11 +12,6 @@
   background-color: #e4b1f0;
   max-width: 25rem;
   border: 1px solid $color-dos;
-  transition: transform 0.5s;
-
-  &:hover {
-    transform: scale(1.03);
-  }
 }
 /*popular*/
 .popular {
