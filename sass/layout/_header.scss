@@ -1,6 +1,5 @@
 /* header todos las pag*/
 .index-header,
-.nosotros-header,
 .promociones-header,
 .contacto-header,
 .login-header,
@@ -10,6 +9,11 @@
   width: 100%;
   @extend %backgroundHeader;
 }
+.nosotros-header {
+  width: 100%;
+  min-height: 95vh;
+  background: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.6));
+}
 .index-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
     url(../img/headerBackground.jpg);
@@ -17,6 +21,7 @@
 .productos-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)),
     url(../img/imgProductos.png);
+  height: 80vh;
 }
 .promociones-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)),

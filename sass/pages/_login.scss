@@ -1,3 +1,10 @@
+/*h1 contacto,productos,login,promociones*/
+.h1-titulo {
+  @include textStyle($font-size-lg, bold, $color-tres);
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
 /*main contacto/login/form*/
 // form {
 //   background-image: url(../img/formbg5.jpg);
