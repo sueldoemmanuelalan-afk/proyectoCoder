@@ -1,3 +1,4 @@
+@charset "UTF-8";
 form, .mesa, .index-header,
 .nosotros-header,
 .promociones-header,
@@ -544,6 +545,18 @@ form {
 
 .product-txt a {
   text-decoration: none;
+}
+
+.promociones-semana {
+  background-color: #433878;
+}
+
+.promociones-mes {
+  background-color: #7e60bf;
+}
+
+.Información-cultural {
+  background-color: #e4b1f0;
 }
 
 /*@media query*/
