@@ -1,5 +1,5 @@
 @charset "UTF-8";
-form, .mesa, .index-header,
+.Información-cultural, form, .mesa, .index-header,
 .nosotros-header,
 .promociones-header,
 .contacto-header,
@@ -48,11 +48,12 @@ form, .mesa, .index-header,
 }
 
 .productos-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/imgProductos.png);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)), url(../img/imgProductos.png);
 }
 
 .promociones-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)), url(../img/imgPromociones.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)), url(../../img/5f3fd681c924752c5f99c83dd5376192.jpg);
+  height: 85vh;
 }
 
 .nosotros-header {
@@ -60,11 +61,12 @@ form, .mesa, .index-header,
 }
 
 .contacto-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/imgContacto.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../../img/1c66fe52ef7e0f2fdc67472d9a78eb4e.jpg);
+  transition: transform 0, 7s;
 }
 
 .login-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)), url(../img/imgLogin.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)), url(../../img/f83b7aad49f420abee2367b09c350ec5.jpg);
 }
 
 /*nav*/
@@ -108,10 +110,6 @@ form, .mesa, .index-header,
 /*main*/
 .main {
   background-color: #433878;
-}
-
-.card {
-  margin-bottom: 50px;
 }
 
 .card-productos {
@@ -280,7 +278,7 @@ form {
   font-size: 20px;
   top: 7px;
   right: 8px;
-  background: linear-gradient(#7e60bf, #ffe1ff);
+  background: linear-gradient(#e4b1f0, #000000);
 }
 
 .input-container > input {
@@ -309,7 +307,7 @@ form {
   width: 100%;
   min-width: 120px;
   box-sizing: border-box;
-  background: linear-gradient(#7e60bf, #ffe1ff);
+  background: linear-gradient(#e4b1f0, #000000);
   background-color: #433878;
   color: #ffffff;
   padding: 0.5rem 1rem;
@@ -323,66 +321,6 @@ form {
 }
 
 /*main contacto/login/form*/
-form {
-  background-image: url(../img/formbg5.jpg);
-  flex-direction: column;
-  align-items: center;
-}
-
-.input-container {
-  position: relative;
-}
-
-.input-container > i {
-  padding: 14px;
-  border-radius: 50%;
-  color: #ffffff;
-  position: absolute;
-  font-size: 20px;
-  top: 7px;
-  right: 8px;
-  background: linear-gradient(#7e60bf, #ffe1ff);
-}
-
-.input-container > input {
-  padding: 20px 50px 20px 15px;
-  width: 100%;
-  margin-bottom: 25px;
-  border-radius: 35px;
-  background-color: transparent;
-  border: 2px solid #000000;
-  font-size: 17px;
-  outline: none;
-  color: #000000;
-}
-
-.form-width {
-  max-width: 400px;
-}
-
-.logo-width {
-  width: 80px;
-}
-
-.btn {
-  box-shadow: 8px 8px 8px 0 #000000;
-  font-size: 16px;
-  width: 100%;
-  min-width: 120px;
-  box-sizing: border-box;
-  background: linear-gradient(#7e60bf, #ffe1ff);
-  background-color: #433878;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.8rem;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.btn:hover {
-  background-color: rgb(60.3, 50.4, 108);
-}
-
 /*h1 contacto,nosotros,productos,login,promociones*/
 .h1-titulo {
   font-size: 20px;
@@ -493,20 +431,30 @@ form {
 }
 
 .btn-2 {
-  display: inline-block;
-  margin-right: 0;
-  font-size: 17px;
+  box-shadow: 8px 8px 8px 0 #000000;
+  font-size: 16px;
+  text-align: center;
+  width: 50%;
+  min-width: 120px;
   box-sizing: border-box;
-  background-color: #7e60bf;
-  color: #ffe1ff;
+  transition: transform 0.5s;
+}
+.btn-2:hover {
+  color: #000000;
+  transform: scale(1.03);
+}
+.btn-2 {
+  background: linear-gradient(#e4b1f0, #000000);
+  background-color: #433878;
+  color: #ffffff;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .btn-2:hover {
-  background-color: rgb(109.3977578475, 75.5367713004, 182.7632286996);
+  background-color: rgb(60.3, 50.4, 108);
 }
 
 .load-more {
@@ -529,12 +477,12 @@ form {
 
 .product-txt {
   padding: 50px 30px;
-  background-color: #433878;
+  background-color: #e4b1f0;
 }
 
 .product-txt h3 {
   font-size: 25px;
-  color: #ffe1ff;
+  color: #433878;
   margin-bottom: 20px;
 }
 
@@ -557,6 +505,7 @@ form {
 
 .Información-cultural {
   background-color: #e4b1f0;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.7)), url(../../img/img-p-product.jpg);
 }
 
 /*@media query*/

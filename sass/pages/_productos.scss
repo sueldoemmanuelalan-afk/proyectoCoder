@@ -54,16 +54,32 @@
   display: inline-block;
 }
 .btn-2 {
-  display: inline-block;
-  margin-right: 0;
-  font-size: 17px;
+  box-shadow: $shadow-base;
+  font-size: $font-size-base;
+  text-align: center;
+  width: 50%;
+  min-width: 120px;
   box-sizing: border-box;
-  @include buttonStyle(
-    $bg: $color-cuatro,
-    $color: $color-seis,
-    $radius: $radius-sm
-  );
+  transition: transform 0.5s;
+
+  &:hover {
+    color: $color-dos;
+    transform: scale(1.03);
+  }
+
+  @include backgroundLinear($color-cinco, $color-dos);
+  @include buttonStyle($color-uno, $color-tres, $radius-md);
 }
+// display: inline-block;
+// margin-right: 0;
+// font-size: 17px;
+// box-sizing: border-box;
+// @include buttonStyle(
+//   $bg: $color-cuatro,
+//   $color: $color-seis,
+//   $radius: $radius-sm
+// );
+
 .load-more {
   margin-top: 50px;
   display: inline-block;
@@ -82,11 +98,11 @@
 }
 .product-txt {
   padding: 50px 30px;
-  background-color: $color-uno;
+  background-color: $color-cinco;
 }
 .product-txt h3 {
   font-size: 25px;
-  color: $color-seis;
+  color: $color-uno;
   margin-bottom: 20px;
 }
 .product-txt p {

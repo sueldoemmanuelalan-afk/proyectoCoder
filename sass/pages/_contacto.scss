@@ -16,7 +16,7 @@ form {
   font-size: 20px;
   top: 7px;
   right: 8px;
-  @include backgroundLinear($color-cuatro, $color-seis);
+  @include backgroundLinear($color-cinco, $color-dos);
 }
 .input-container > input {
   padding: 20px 50px 20px 15px;
@@ -41,6 +41,6 @@ form {
   width: 100%;
   min-width: 120px;
   box-sizing: border-box;
-  @include backgroundLinear($color-cuatro, $color-seis);
+  @include backgroundLinear($color-cinco, $color-dos);
   @include buttonStyle($color-uno, $color-tres, $radius-md);
 }

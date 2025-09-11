@@ -1,46 +1,46 @@
 /*main contacto/login/form*/
-form {
-  background-image: url(../img/formbg5.jpg);
-  flex-direction: column;
-  align-items: center;
-  @extend %backgroundHeader;
-}
-.input-container {
-  position: relative;
-}
-.input-container > i {
-  padding: 14px;
-  border-radius: 50%;
-  color: $color-tres;
-  position: absolute;
-  font-size: 20px;
-  top: 7px;
-  right: 8px;
-  @include backgroundLinear($color-cuatro, $color-seis);
-}
-.input-container > input {
-  padding: 20px 50px 20px 15px;
-  width: 100%;
-  margin-bottom: 25px;
-  border-radius: 35px;
-  background-color: transparent;
-  border: 2px solid $color-dos;
-  font-size: 17px;
-  outline: none;
-  color: $color-dos;
-}
-.form-width {
-  max-width: 400px;
-}
-.logo-width {
-  width: 80px;
-}
-.btn {
-  box-shadow: $shadow-base;
-  font-size: $font-size-base;
-  width: 100%;
-  min-width: 120px;
-  box-sizing: border-box;
-  @include backgroundLinear($color-cuatro, $color-seis);
-  @include buttonStyle($color-uno, $color-tres, $radius-md);
-}
+// form {
+//   background-image: url(../img/formbg5.jpg);
+//   flex-direction: column;
+//   align-items: center;
+//   @extend %backgroundHeader;
+// }
+// .input-container {
+//   position: relative;
+// }
+// .input-container > i {
+//   padding: 14px;
+//   border-radius: 50%;
+//   color: $color-tres;
+//   position: absolute;
+//   font-size: 20px;
+//   top: 7px;
+//   right: 8px;
+//   @include backgroundLinear($color-cuatro, $color-seis);
+// }
+// .input-container > input {
+//   padding: 20px 50px 20px 15px;
+//   width: 100%;
+//   margin-bottom: 25px;
+//   border-radius: 35px;
+//   background-color: transparent;
+//   border: 2px solid $color-dos;
+//   font-size: 17px;
+//   outline: none;
+//   color: $color-dos;
+// }
+// .form-width {
+//   max-width: 400px;
+// }
+// .logo-width {
+//   width: 80px;
+// }
+// .btn {
+//   box-shadow: $shadow-base;
+//   font-size: $font-size-base;
+//   width: 100%;
+//   min-width: 120px;
+//   box-sizing: border-box;
+//   @include backgroundLinear($color-cuatro, $color-seis);
+//   @include buttonStyle($color-uno, $color-tres, $radius-md);
+// }
