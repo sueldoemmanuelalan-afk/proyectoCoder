@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.Información-cultural, form, .mesa, .index-header,
+.Información-cultural, .form-width, .mesa, .index-header,
 .nosotros-header,
 .promociones-header,
 .contacto-header,
@@ -260,7 +260,7 @@
 }
 
 /*main contacto/login/form*/
-form {
+.form-width {
   background-image: url(../img/formbg5.jpg);
   flex-direction: column;
   align-items: center;
