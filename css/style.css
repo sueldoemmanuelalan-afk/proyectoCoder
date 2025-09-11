@@ -53,16 +53,10 @@
 
 .promociones-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)), url(../../img/5f3fd681c924752c5f99c83dd5376192.jpg);
-  height: 85vh;
-}
-
-.nosotros-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)), url(../../img/fotogrupalequipo.jpg);
 }
 
 .contacto-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../../img/1c66fe52ef7e0f2fdc67472d9a78eb4e.jpg);
-  transition: transform 0, 7s;
 }
 
 .login-header {
@@ -366,6 +360,10 @@
 }
 
 /*main productos*/
+.main-productos {
+  background-color: #7e60bf;
+}
+
 .popular {
   display: none;
 }
@@ -387,7 +385,7 @@
 }
 
 .product hr {
-  border: 2px solid #7e60bf;
+  border: 2px solid #ffe1ff;
   width: 100%;
   margin-bottom: 40px;
   opacity: inherit;
@@ -459,6 +457,7 @@
 
 .load-more {
   margin-top: 50px;
+  margin-bottom: 50px;
   display: inline-block;
   padding: 10px 25px;
   border-radius: 25px;
@@ -471,13 +470,17 @@
 }
 
 .load-more:hover {
-  background-color: #7e60bf;
+  background-color: #433878;
   color: #ffffff;
 }
 
 .product-txt {
   padding: 50px 30px;
   background-color: #e4b1f0;
+}
+
+.product-txt-galleta {
+  background-color: #7e60bf;
 }
 
 .product-txt h3 {
@@ -493,6 +496,15 @@
 
 .product-txt a {
   text-decoration: none;
+}
+
+.destacados {
+  background-color: #433878;
+  width: 100%;
+}
+
+.section-galleta {
+  background-color: #e4b1f0;
 }
 
 .promociones-semana {

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <!--body-->
-  <body class="body-productos">
+  <body>
     <!--header-->
     <header class="productos-header py-5 text-start">
       <nav
@@ -70,13 +70,8 @@
       <div class="h1-titulo">
         <h1 class="display-5 fw-bold text-center mb-5">Productos</h1>
       </div>
-      <p class="text-center text-white px-3 display-5 fw-bold p-product">
-        Descubrí nuestra selección de productos importados: snacks, fideos,
-        salsas, condimentos, bebidas y más. Todo organizado por categorías para
-        que encuentres fácilmente lo que estás buscando.
-      </p>
     </header>
-    <section class="container py-5">
+    <section class="py-5 destacados w-100">
       <h2 class="text-center p-5 text-white fs-2 fw-bold">
         Productos Destacados
       </h2>
@@ -112,13 +107,18 @@
             class="popular-img" />
         </div>
       </section>
-      <p class="text-center text-white mt-5">
+      <p class="text-center text-white mt-5 fs-3">
         misso, sake de ciruela, jugos de mango, salsa tonkatsu, ajinomoto y
         más...
       </p>
+      <p class="text-center text-white px-3 fw-bold fs-3">
+        Descubrí nuestra selección de productos importados: snacks, fideos,
+        salsas, condimentos, bebidas y más. Todo organizado por categorías para
+        que encuentres fácilmente lo que estás buscando.
+      </p>
     </section>
     <!--main-->
-    <main>
+    <main class="main-productos">
       <section class="product d-flex flex-column container">
         <!--almacen-->
         <h2 class="text-white" id="almacen">Almacén</h2>
@@ -678,7 +678,7 @@
           <div class="box-3">
             <img src="../img/snack16.jpg" alt="imagen caramelos limon" />
             <div class="product-txt">
-              <h3>Dulces acidos</h3>
+              <h3>Dulces ácidos</h3>
               <p>Barra de caramelo masticable sabor limonada agridulce.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
@@ -689,8 +689,10 @@
         </div>
         <div class="load-more" id="load-more-3">Cargar más</div>
       </section>
-      <!--galleta de la fortuna-->
-      <h2 class="text-center text-white mt-5 mb-5 fs-2 fw-bold">
+    </main>
+    <!--galleta de la fortuna-->
+    <section class="section-galleta py-5 product d-flex flex-column">
+      <h2 class="text-center text-white p-5 mb-5 fs-2 fw-bold">
         No te olvides de la Tradicional Galleta
       </h2>
       <div
@@ -698,7 +700,8 @@
         <img
           src="../img/galletadelaFortuna.jpg"
           alt="imagen galleta de la fortuna" />
-        <div class="product-txt flex-column d-flex justify-content-center p-4">
+        <div
+          class="product-txt-galleta flex-column d-flex justify-content-center p-4">
           <h3 class="text-white text-center">Galleta de la Fortuna</h3>
           <p class="text-white text-center">
             Galletas de la fortuna, conocidas por contener un mensaje o
@@ -709,10 +712,10 @@
           </div>
         </div>
       </div>
-    </main>
+    </section>
     <!--footer-->
-    <footer class="footer text-light py-4 mt-4 p-0">
-      <h3 class="text-center text-">Todos los Derechos Reservados</h3>
+    <footer class="footer text-light p-3">
+      <h3 class="text-center text-dark">Todos los Derechos Reservados</h3>
       <div class="container">
         <div
           class="row text-center footer-content justify-content-center gap-4">
@@ -721,18 +724,14 @@
               Compañia
             </h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Nosotros</a></li>
+              <li><a href="#" class="d-block">Nosotros</a></li>
               <li>
-                <a href="#" class="text-light d-block"
-                  >Términos y condiciones</a
-                >
+                <a href="#" class="d-block">Términos y condiciones</a>
               </li>
               <li>
-                <a href="#" class="text-light d-block"
-                  >Politica de privacidad</a
-                >
+                <a href="#" class="d-block">Politica de privacidad</a>
               </li>
-              <li><a href="#" class="text-light d-block">Registrate</a></li>
+              <li><a href="#" class="d-block">Registrate</a></li>
             </ul>
           </div>
           <div class="footer-links col-md-2 col-12">
@@ -740,10 +739,10 @@
               Ayuda
             </h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Preguntas</a></li>
-              <li><a href="#" class="text-light d-block">Compras</a></li>
-              <li><a href="#" class="text-light d-block">Envios</a></li>
-              <li><a href="#" class="text-light d-block">Pagos</a></li>
+              <li><a href="#" class="d-block">Preguntas</a></li>
+              <li><a href="#" class="d-block">Compras</a></li>
+              <li><a href="#" class="d-block">Envios</a></li>
+              <li><a href="#" class="d-block">Pagos</a></li>
             </ul>
           </div>
           <div class="footer-links col-md-2 col-12">
@@ -751,10 +750,10 @@
               Tienda
             </h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Ramen</a></li>
-              <li><a href="#" class="text-light d-block">Bebidas</a></li>
-              <li><a href="#" class="text-light d-block">Snacks</a></li>
-              <li><a href="#" class="text-light d-block">Soju y Sake</a></li>
+              <li><a href="#" class="d-block">Ramen</a></li>
+              <li><a href="#" class="d-block">Bebidas</a></li>
+              <li><a href="#" class="d-block">Snacks</a></li>
+              <li><a href="#" class="d-block">Soju y Sake</a></li>
             </ul>
           </div>
           <div class="footer-links col-md-4 col-12">

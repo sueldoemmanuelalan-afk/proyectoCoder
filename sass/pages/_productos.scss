@@ -1,4 +1,7 @@
 /*main productos*/
+.main-productos {
+  background-color: $color-cuatro;
+}
 .popular {
   display: none;
 }
@@ -16,7 +19,7 @@
   margin: 50px auto;
 }
 .product hr {
-  border: 2px solid $color-cuatro;
+  border: 2px solid $color-seis;
   width: 100%;
   margin-bottom: 40px;
   opacity: inherit;
@@ -70,18 +73,9 @@
   @include backgroundLinear($color-cinco, $color-dos);
   @include buttonStyle($color-uno, $color-tres, $radius-md);
 }
-// display: inline-block;
-// margin-right: 0;
-// font-size: 17px;
-// box-sizing: border-box;
-// @include buttonStyle(
-//   $bg: $color-cuatro,
-//   $color: $color-seis,
-//   $radius: $radius-sm
-// );
-
 .load-more {
   margin-top: 50px;
+  margin-bottom: 50px;
   display: inline-block;
   padding: 10px 25px;
   border-radius: 25px;
@@ -93,12 +87,15 @@
   background-color: $color-seis;
 }
 .load-more:hover {
-  background-color: $color-cuatro;
+  background-color: $color-uno;
   color: $color-tres;
 }
 .product-txt {
   padding: 50px 30px;
   background-color: $color-cinco;
+}
+.product-txt-galleta {
+  background-color: $color-cuatro;
 }
 .product-txt h3 {
   font-size: 25px;
@@ -111,4 +108,11 @@
 }
 .product-txt a {
   text-decoration: none;
+}
+.destacados {
+  background-color: $color-uno;
+  width: 100%;
+}
+.section-galleta {
+  background-color: $color-cinco;
 }

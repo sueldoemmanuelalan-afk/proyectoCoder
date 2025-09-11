@@ -21,16 +21,14 @@
 .promociones-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)),
     url(../../img/5f3fd681c924752c5f99c83dd5376192.jpg);
-  height: 85vh;
 }
-.nosotros-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)),
-    url(../../img/fotogrupalequipo.jpg);
-}
+// .nosotros-header {
+//   background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.4)),
+//     url(../../img/fotogrupalequipo.jpg);
+// }
 .contacto-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
     url(../../img/1c66fe52ef7e0f2fdc67472d9a78eb4e.jpg);
-  transition: transform 0, 7s;
 }
 .login-header {
   background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)),
