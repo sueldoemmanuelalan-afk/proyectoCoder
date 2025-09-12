@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarang</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -62,7 +79,7 @@
       <section
         class="header-contenedor-inferior d-flex flex-column w-100 m-auto justify-content-between align-items-center gap-1">
         <h1 class="index-h1 text-white text-center fw-bold text-uppercase">Tienda de Comestibles Asiáticos</h1>
-        <p class="text-center text-white fw-semibold mb-1 p-1 fs-3">
+        <p class="text-center text-white fw-semibold mb-3 p-1 fs-3">
           Bienvenidos a nuestro local de comestibles asiáticos. Aquí encontrarás las novedades, recomendaciones y
           accesos directos a nuestras secciones principales. Queremos acercarte lo mejor de la cultura oriental a tu
           mesa, sin tener que viajar.
@@ -89,6 +106,57 @@
         <h2 class="text-center p-5 text-white fs-2 fw-bold animate__animated animate__heartBeat">
           Productos Destacados
         </h2>
+        <!--carousel-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/popular1.jpg" class="d-flex w-100" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/popular2.jpg" class="d-flex w-100" alt="" />
+            </div>
+            <div class="carousel-item active">
+              <img src="img/popular3.jpg" class="d-flex w-100" alt="" />
+            </div>
+            <div class="carousel-item active">
+              <img src="img/popular4.jpg" class="d-flex w-100" alt="" />
+            </div>
+            <div class="carousel-item active">
+              <img src="img/popular5.jpg" class="d-flex w-100" alt="" />
+            </div>
+            <div class="carousel-item active">
+              <img src="img/popular6.jpg" class="d-flex w-100" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/popular7.jpg" class="d-flex w-100" alt="" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br />
+        <p class="text-center text-white fs-4">
+          misso, sake de ciruela, jugos de mango, salsa tonkatsu, ajinomoto y más...
+        </p>
+      </section>
+      <!-- <section class="container py-5">
+        <h2 class="text-center p-5 text-white fs-2 fw-bold animate__animated animate__heartBeat">
+          Productos Destacados
+        </h2>
         <section class="popular text-center container">
           <div class="popular-content d-flex align-items-center flex-nowrap">
             <img src="img/popular1.jpg" alt="paquete de misso x1kg" class="popular-img" />
@@ -101,7 +169,7 @@
           </div>
         </section>
         <p class="text-center text-white">misso, sake de ciruela, jugos de mango, salsa tonkatsu, ajinomoto y más...</p>
-      </section>
+      </section> -->
       <h2 class="text-center p-5 text-white fs-2 fw-bold">Nuestros Productos</h2>
       <div class="row productos-contenedor-flex justify-content-center gap-3 m-auto p-0">
         <section class="card-productos text-center col-md-3 col-12 shadow-sm p-3 mb-5 rounded">
