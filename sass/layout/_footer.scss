@@ -6,6 +6,11 @@
   width: 2.5rem;
   height: 40px;
   object-fit: cover;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 .footer h3 {
   padding: 20px;

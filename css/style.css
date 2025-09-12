@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'animate.css';
 .Información-cultural, .form-width, .mesa, .index-header,
 .promociones-header,
 .contacto-header,
@@ -40,20 +41,20 @@
 }
 
 .index-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.1)), url(../../img/BgHeaderIndex.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.1)), url(../img/BgHeaderIndex.jpg);
   height: 100vh;
 }
 
 .promociones-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)), url(../../img/BgHeaderPromociones.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)), url(../img/BgHeaderPromociones.jpg);
 }
 
 .contacto-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../../img/BgHeaderContacto.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/BgHeaderContacto.jpg);
 }
 
 .login-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)), url(../../img/BgHeaderLogin.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)), url(../img/BgHeaderLogin.jpg);
 }
 
 .nosotros-header {
@@ -235,6 +236,10 @@
   width: 2.5rem;
   height: 40px;
   object-fit: cover;
+  transition: transform 0.5s;
+}
+.logotipo-footer:hover {
+  transform: scale(1.03);
 }
 
 .footer h3 {
@@ -317,6 +322,12 @@
 }
 .btn:hover {
   background-color: rgb(60.3, 50.4, 108);
+}
+.btn {
+  transition: transform 0.5s;
+}
+.btn:hover {
+  transform: scale(1.03);
 }
 
 /*h1 contacto,login,promociones*/

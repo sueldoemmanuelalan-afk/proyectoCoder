@@ -6,7 +6,7 @@
 }
 .Información-cultural {
   background-color: $color-cinco;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.7)),
-    url(../../img/imgTradicion.jpg);
+  background-image:
+    linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.7)), url(../../img/imgTradicion.jpg);
   @extend %backgroundHeader;
 }
