@@ -8,32 +8,32 @@
   width: 100%;
   @extend %backgroundHeader;
 }
+.index-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.4)),
+    url(../../img/BgHeaderIndex.jpg);
+  height: 100vh;
+}
+.promociones-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)),
+    url(../../img/BgHeaderPromociones.jpg);
+}
+.contacto-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
+    url(../../img/BgHeaderContacto.jpg);
+}
+.login-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)),
+    url(../../img/BgHeaderLogin.jpg);
+}
 .nosotros-header {
   width: 100%;
   min-height: 95vh;
   background: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.6));
 }
-.index-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.4)),
-    url(../../img/Imagen\ de\ WhatsApp\ 2025-09-11\ a\ las\ 20.10.32_e2589e27.jpg);
-  height: 100vh;
-}
 .productos-header {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(rgba(7, 7, 7, 0.966), rgba(5, 7, 12, 0.4));
-}
-.promociones-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)),
-    url(../../img/5f3fd681c924752c5f99c83dd5376192.jpg);
-}
-.contacto-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)),
-    url(../../img/1c66fe52ef7e0f2fdc67472d9a78eb4e.jpg);
-}
-.login-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.5)),
-    url(../../img/f83b7aad49f420abee2367b09c350ec5.jpg);
 }
 /*nav*/
 .navbar {
