@@ -22,7 +22,7 @@
     @include flexRow(row, center, center);
   }
   .carousel-inner {
-    height: 450px;
+    height: 500px;
     width: 400px;
     margin: auto;
     padding: 0;
@@ -66,6 +66,12 @@
     margin-right: auto;
     width: 100%;
   }
+  // .carousel-inner {
+  //   height: 450px;
+  //   width: 400px;
+  //   margin: auto;
+  //   padding: 0;
+  // }
 }
 @media (min-aspect-ratio: 16/9) {
   .video {

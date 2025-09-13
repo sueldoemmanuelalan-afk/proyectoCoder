@@ -53,3 +53,15 @@
 .card {
   margin-bottom: 50px;
 }
+.nosotros-sarang {
+  opacity: 0;
+  animation: sarang 2s infinite;
+}
+@keyframes sarang {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
