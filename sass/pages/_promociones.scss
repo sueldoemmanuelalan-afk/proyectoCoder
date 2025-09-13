@@ -18,33 +18,3 @@
   flex-direction: column;
   align-items: center;
 }
-.caja {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  padding: 30px 30px;
-  width: 100%;
-  height: 200px;
-  border: 4px solid #ffff;
-  animation:
-    change-color 5s infinite linear normal,
-    move-caja 5s infinite linear normal 5s;
-}
-.caja:hover {
-  animation-play-state: paused;
-}
-@keyframes change-color {
-  0% {
-    background: $color-uno;
-  }
-  25% {
-    background: $color-cuatro;
-  }
-  50% {
-    background: $color-cinco;
-  }
-  100% {
-    background: $color-seis;
-  }
-}

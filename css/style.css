@@ -236,7 +236,7 @@
   transition: transform 0.5s;
 }
 .logotipo-footer:hover {
-  transform: scale(1.03);
+  transform: scale(1.15);
 }
 
 .footer h3 {
@@ -400,6 +400,51 @@
   background-color: #7e60bf;
 }
 
+.destacados-2 {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 30px 30px;
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ffffff;
+  animation: change-color 5s infinite linear normal;
+}
+
+.caja:hover {
+  animation-play-state: paused;
+}
+
+@keyframes change-color {
+  0% {
+    background: #433878;
+  }
+  20% {
+    background: #7e60bf;
+  }
+  40% {
+    background: #e4b1f0;
+  }
+  60% {
+    background: #ffe1ff;
+  }
+  80% {
+    background: #e4b1f0;
+  }
+  100% {
+    background: #7e60bf;
+  }
+}
 /*popular*/
 .popular {
   display: none;
@@ -595,36 +640,6 @@
   align-items: center;
 }
 
-.caja {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  padding: 30px 30px;
-  width: 100%;
-  height: 200px;
-  border: 4px solid white;
-  animation: change-color 5s infinite linear normal, move-caja 5s infinite linear normal 5s;
-}
-
-.caja:hover {
-  animation-play-state: paused;
-}
-
-@keyframes change-color {
-  0% {
-    background: #433878;
-  }
-  25% {
-    background: #7e60bf;
-  }
-  50% {
-    background: #e4b1f0;
-  }
-  100% {
-    background: #ffe1ff;
-  }
-}
 /*@media query*/
 @media (min-width: 991px) {
   .opiniones-content {
