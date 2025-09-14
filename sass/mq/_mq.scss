@@ -41,8 +41,10 @@
     width: 70vw;
     padding: 0 10px 0 10px;
   }
+}
+@media (max-width: 600px) {
   .form-iframe {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 

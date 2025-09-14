@@ -5,11 +5,10 @@
   margin-top: 40px;
 }
 .form-contacto {
-  background: linear-gradient(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
   flex-direction: column;
   align-items: center;
-  max-width: 350px;
   border-radius: 25px;
+  background: linear-gradient(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
   @extend %backgroundHeader;
 }
 .input-container-contacto {
@@ -29,7 +28,7 @@
     width: 100%;
     margin-bottom: 25px;
     border-radius: 35px;
-    background-color: (rgba(248, 194, 248, 0.432));
+    background-color: (rgba(236, 230, 236, 0.349));
     border: 2px solid $color-dos;
     font-size: 20px;
     font-weight: 600;
@@ -54,17 +53,34 @@
     transform: scale(1.03);
   }
 }
-iframe {
-  padding: 1rem;
-  width: 300px;
-  height: 650px;
-  border-radius: 30px;
-}
+// iframe {
+//   padding: 1rem;
+//   width: 300px;
+//   height: 650px;
+//   border-radius: 30px;
+// }
+
 .form-iframe {
+  width: 80%;
+  height: auto;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  border-radius: 10px;
+}
+.form-map {
   width: 100%;
+  height: auto;
+  flex: 50%;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+.form-contacto {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 0;
 }
