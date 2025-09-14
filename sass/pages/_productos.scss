@@ -1,6 +1,27 @@
-/*main productos*/
+/*main productos,h1,video,destacados,animacion*/
 .main-productos {
   background-color: $color-cuatro;
+}
+.productos-h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: $color-tres;
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+    margin-bottom: 200px;
+  }
+}
+.video-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 .destacados-2 {
   position: relative;
@@ -69,9 +90,7 @@
     opacity: inherit;
   }
 }
-.box-container-1,
-.box-container-2,
-.box-container-3 {
+.caja-contenedor-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
@@ -81,7 +100,6 @@
 .box-3 {
   border-radius: 5px;
   display: none;
-  background-color: $color-dos;
 }
 .box-1:nth-child(1),
 .box-1:nth-child(2),
@@ -118,6 +136,7 @@
   @include backgroundLinear($color-cinco, $color-dos);
   @include buttonStyle($color-uno, $color-tres, $radius-md);
 }
+/*botones load more*/
 .load-more {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -134,12 +153,6 @@
 .load-more:hover {
   background-color: $color-uno;
   color: $color-tres;
-}
-.product-txt-galleta {
-  background-color: $color-cuatro;
-  a {
-    text-decoration: none;
-  }
 }
 .product-txt {
   padding: 50px 30px;
@@ -164,24 +177,18 @@
 .section-galleta {
   background-color: $color-cinco;
 }
-.productos-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h1 {
-    color: $color-tres;
-    font-size: 3.5rem;
-    letter-spacing: -2px;
-    margin-bottom: 200px;
-  }
+.card-galleta {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: $color-seis;
+  max-width: 25rem;
+  border: 1px solid $color-dos;
 }
-.video-2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+
+.product-txt-galleta {
+  background-color: $color-cuatro;
+  a {
+    text-decoration: none;
+  }
 }

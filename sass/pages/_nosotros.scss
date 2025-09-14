@@ -1,4 +1,4 @@
-/*equipo*/
+/*h1,video header,cards equipo,sections*/
 .nosotros-h1 {
   position: absolute;
   top: 50%;
@@ -7,12 +7,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.nosotros-h1 h1 {
-  color: $color-tres;
-  font-size: 4rem;
-  letter-spacing: -2px;
-  margin-bottom: 10px;
+  h1 {
+    color: $color-tres;
+    font-size: 4rem;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+  }
 }
 .video {
   position: absolute;

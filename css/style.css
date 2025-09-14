@@ -54,7 +54,7 @@
 }
 
 .login-header {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.4)), url(../img/BgHeaderLogin.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.7)), url(../img/BgHeaderLogin.jpg);
 }
 
 .nosotros-header {
@@ -121,6 +121,7 @@
   margin: 0 auto;
 }
 
+/*card productos*/
 .cards-contenedor-flex {
   gap: 2rem;
   display: flex;
@@ -256,7 +257,7 @@
   transform: scale(1.15);
 }
 
-/*main contacto/login/form*/
+/*main contacto form*/
 .contacto-h1 {
   font-size: 20px;
   font-weight: bold;
@@ -326,7 +327,7 @@
   transform: scale(1.03);
 }
 
-/*h1 contacto,login,promociones*/
+/*login-h1,form*/
 .login-h1 {
   font-size: 20px;
   font-weight: bold;
@@ -396,7 +397,7 @@
   transform: scale(1.03);
 }
 
-/*equipo*/
+/*h1,video header,cards equipo,sections*/
 .nosotros-h1 {
   position: absolute;
   top: 50%;
@@ -406,7 +407,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .nosotros-h1 h1 {
   color: #ffffff;
   font-size: 4rem;
@@ -470,9 +470,32 @@
     opacity: 1;
   }
 }
-/*main productos*/
+/*main productos,h1,video,destacados,animacion*/
 .main-productos {
   background-color: #7e60bf;
+}
+
+.productos-h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productos-h1 h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  letter-spacing: -2px;
+  margin-bottom: 200px;
+}
+
+.video-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .destacados-2 {
@@ -547,9 +570,7 @@
   opacity: inherit;
 }
 
-.box-container-1,
-.box-container-2,
-.box-container-3 {
+.caja-contenedor-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
@@ -560,7 +581,6 @@
 .box-3 {
   border-radius: 5px;
   display: none;
-  background-color: #000000;
 }
 
 .box-1:nth-child(1),
@@ -611,6 +631,7 @@
   background-color: rgb(60.3, 50.4, 108);
 }
 
+/*botones load more*/
 .load-more {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -628,13 +649,6 @@
 .load-more:hover {
   background-color: #433878;
   color: #ffffff;
-}
-
-.product-txt-galleta {
-  background-color: #7e60bf;
-}
-.product-txt-galleta a {
-  text-decoration: none;
 }
 
 .product-txt {
@@ -663,7 +677,24 @@
   background-color: #e4b1f0;
 }
 
-.productos-h1 {
+.card-galleta {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #ffe1ff;
+  max-width: 25rem;
+  border: 1px solid #000000;
+}
+
+.product-txt-galleta {
+  background-color: #7e60bf;
+}
+.product-txt-galleta a {
+  text-decoration: none;
+}
+
+/*promociones h1,sections*/
+.promociones-h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -672,18 +703,9 @@
   flex-direction: column;
   align-items: center;
 }
-.productos-h1 h1 {
-  color: #ffffff;
-  font-size: 3.5rem;
-  letter-spacing: -2px;
-  margin-bottom: 200px;
-}
 
-.video-2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+.animate__animated.animate__flip {
+  --animate-duration: 3s;
 }
 
 .promociones-semana {
@@ -697,20 +719,6 @@
 .Información-cultural {
   background-color: #e4b1f0;
   background-image: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.7)), url(../../img/imgTradicion.jpg);
-}
-
-.promociones-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.animate__animated.animate__flip {
-  --animate-duration: 3s;
 }
 
 /*@media query*/
