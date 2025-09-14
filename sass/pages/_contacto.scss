@@ -1,38 +1,41 @@
 /*main contacto/login/form*/
-.form-width {
-  background-image: url(../img/formbg5.jpg);
+.contacto-h1 {
+  @include textStyle($font-size-lg, bold, $color-tres);
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.form-contacto {
+  background: linear-gradient(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
   flex-direction: column;
   align-items: center;
+  max-width: 350px;
   @extend %backgroundHeader;
 }
-.input-container {
+.input-container-contacto {
   position: relative;
+  i {
+    padding: 14px;
+    border-radius: 50%;
+    color: $color-tres;
+    position: absolute;
+    font-size: 20px;
+    top: 7px;
+    right: 8px;
+    @include backgroundLinear($color-cinco, $color-dos);
+  }
+  input {
+    padding: 20px 50px 20px 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: (rgba(250, 182, 247, 0.432));
+    border: 2px solid $color-dos;
+    font-size: 17px;
+    outline: none;
+    color: $color-dos;
+  }
 }
-.input-container > i {
-  padding: 14px;
-  border-radius: 50%;
-  color: $color-tres;
-  position: absolute;
-  font-size: 20px;
-  top: 7px;
-  right: 8px;
-  @include backgroundLinear($color-cinco, $color-dos);
-}
-.input-container > input {
-  padding: 20px 50px 20px 15px;
-  width: 100%;
-  margin-bottom: 25px;
-  border-radius: 35px;
-  background-color: transparent;
-  border: 2px solid $color-dos;
-  font-size: 17px;
-  outline: none;
-  color: $color-dos;
-}
-.form-width {
-  max-width: 400px;
-}
-.logo-width {
+.logo-form-contacto {
   width: 80px;
 }
 .btn {

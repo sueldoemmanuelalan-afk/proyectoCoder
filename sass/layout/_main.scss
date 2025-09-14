@@ -15,31 +15,40 @@
     margin: 0 auto;
   }
 }
-.card-productos {
-  background-color: $color-seis;
-  max-width: 25rem;
-  border: 2px solid $color-dos;
-  transition: transform 0.5s;
+.cards-contenedor-flex {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
 
-  &:hover {
-    transform: scale(1.03);
+  .card-productos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: $color-seis;
+    max-width: 25rem;
+    border: 2px solid $color-dos;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 /*Opiniones*/
-.starts {
-  width: 100px;
-}
-.opiniones-content {
-  margin-top: 35px;
-}
 .opiniones {
   padding: 5px;
   background-color: $color-cinco;
-}
-.opiniones h2 {
-  font-size: 35px;
-  margin: 2rem;
-  line-height: 1;
+  .starts {
+    width: 100px;
+  }
+  h2 {
+    font-size: 35px;
+    margin: 2rem;
+    line-height: 1;
+  }
 }
 .opinion-1,
 .opinion-2,
@@ -67,7 +76,7 @@
 .opinion-6 {
   @include gridArea(3, 4, 4, 6);
 }
-.face {
+.cliente {
   border-radius: 50%;
   border: 3px solid $color-seis;
   margin: 15px auto;

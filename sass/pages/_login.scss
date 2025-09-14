@@ -1,6 +1,55 @@
 /*h1 contacto,login,promociones*/
-.h1-titulo {
+.login-h1 {
   @include textStyle($font-size-lg, bold, $color-tres);
   padding-top: 50px;
   margin-top: 50px;
+}
+.form-login {
+  background: linear-gradient(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  @extend %backgroundHeader;
+}
+.input-container-login {
+  position: relative;
+
+  i {
+    padding: 14px;
+    border-radius: 50%;
+    color: $color-tres;
+    position: absolute;
+    font-size: 20px;
+    top: 7px;
+    right: 8px;
+    @include backgroundLinear($color-cinco, $color-dos);
+  }
+  input {
+    padding: 20px 50px 20px 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: (rgba(250, 182, 247, 0.432));
+    border: 2px solid $color-dos;
+    font-size: 17px;
+    outline: none;
+    color: $color-dos;
+  }
+}
+.logo-form-login {
+  width: 80px;
+}
+.btn {
+  box-shadow: $shadow-base;
+  font-size: $font-size-base;
+  width: 100%;
+  min-width: 120px;
+  box-sizing: border-box;
+  @include backgroundLinear($color-cinco, $color-dos);
+  @include buttonStyle($color-uno, $color-tres, $radius-md);
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }

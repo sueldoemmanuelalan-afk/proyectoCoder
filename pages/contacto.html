@@ -43,7 +43,8 @@
   </head>
   <!--body-->
   <body>
-    <nav class="navbar navbar-expand-lg bg-danger-subtle p-2 position-fixed top-0 w-100">
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg p-1 position-fixed top-0 w-100">
       <div class="container-fluid">
         <img src="../img/logoSarang.png" class="logo" alt="logotipo sarang" />
         <button
@@ -57,7 +58,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
             <li class="nav-item">
               <a class="nav-link active text-danger" aria-current="page" href="../index.html">Inicio</a>
             </li>
@@ -82,27 +83,29 @@
     </nav>
     <!--header-->
     <header class="contacto-header py-5 text-start h-100">
-      <div class="h1-titulo">
-        <h1 class="display-5 fw-bold text-center">Contacto</h1>
+      <div class="contacto-h1">
+        <!--h1-->
+        <h1 class="display-5 fw-bold text-center animate__animated animate__rollIn">Contacto</h1>
       </div>
       <section class="py-5">
-        <form class="m-auto p-4 rounded shadow-lg bg-light form-width">
+        <!--form-->
+        <form class="m-auto p-4 rounded shadow-lg form-contacto">
           <div class="text-center mb-3">
-            <img src="../img/logoSarang.png" alt="imagen logo de Sarang" class="img-fluid logo-width" />
+            <img src="../img/logoSarang.png" alt="imagen logo de Sarang" class="img-fluid logo-form-contacto" />
           </div>
-          <div class="input-container mb-3">
+          <div class="input-container-contacto mb-3">
             <input type="text" class="form-control" placeholder="Nombre" />
             <i class="fa-solid fa-user"></i>
           </div>
-          <div class="input-container mb-3">
+          <div class="input-container-contacto mb-3">
             <input type="password" class="form-control" placeholder="Contraseña" />
             <i class="fa-solid fa-lock"></i>
           </div>
-          <div class="input-container mb-3">
+          <div class="input-container-contacto mb-3">
             <input type="email" class="form-control" placeholder="Correo" />
             <i class="fa-solid fa-envelope"></i>
           </div>
-          <div class="input-container mb-3">
+          <div class="input-container-contacto mb-3">
             <input type="tel" class="form-control" placeholder="Teléfono" />
             <i class="fa-solid fa-phone"></i>
           </div>
@@ -137,12 +140,12 @@
       </div>
     </section> -->
     <!--footer-->
-    <footer class="footer text-light py-4 p-0">
+    <footer class="footer py-4 p-0">
       <h3 class="text-center text-black">Todos los Derechos Reservados</h3>
       <div class="container">
-        <div class="row text-center footer-content justify-content-center gap-4">
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">Compañía</h4>
+        <div class="row text-center justify-content-center gap-4">
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Compañía</h4>
             <ul class="p-0 list-unstyled fs-5">
               <li><a href="#" class="d-block">Nosotros</a></li>
               <li>
@@ -154,8 +157,8 @@
               <li><a href="#" class="d-block">Registrate</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">Ayuda</h4>
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Ayuda</h4>
             <ul class="p-0 list-unstyled fs-5">
               <li><a href="#" class="d-block">Preguntas</a></li>
               <li><a href="#" class="d-block">Compras</a></li>
@@ -163,8 +166,8 @@
               <li><a href="#" class="d-block">Pagos</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">Tienda</h4>
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Tienda</h4>
             <ul class="p-0 list-unstyled fs-5">
               <li><a href="#" class="d-block">Ramen</a></li>
               <li><a href="#" class="d-block">Bebidas</a></li>
@@ -172,23 +175,23 @@
               <li><a href="#" class="d-block">Soju y Sake</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-4 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">Seguinos</h4>
+          <div class="col-md-4 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Seguinos</h4>
             <div class="d-flex justify-content-center gap-2">
               <a href="https://www.facebook.com/share/1B25CpnrVy/" target="_blank" rel="noopener"
-                ><img class="logotipo-footer" src="../img/logoFacebook.png" alt="icono logo de Facebook"
+                ><img class="footer-logotipo" src="../img/logoFacebook.png" alt="icono logo de Facebook"
               /></a>
               <a href="https://www.instagram.com/sarang.asia.ush/#" target="_blank" rel="noopener"
-                ><img class="logotipo-footer" src="../img/logoInstagram.png" alt="icono logo de Instagram"
+                ><img class="footer-logotipo" src="../img/logoInstagram.png" alt="icono logo de Instagram"
               /></a>
               <a href="https://ar.linkedin.com" target="_blank" rel="noopener"
-                ><img class="logotipo-footer" src="../img/logoLinkedin.png" alt="icono logo de Linkedin"
+                ><img class="footer-logotipo" src="../img/logoLinkedin.png" alt="icono logo de Linkedin"
               /></a>
               <a href="https://wa.me/c/5492901300790" target="_blank" rel="noopener"
-                ><img class="logotipo-footer" src="../img/logoWhatsapp.png" alt="icono logo de WhatsApp"
+                ><img class="footer-logotipo" src="../img/logoWhatsapp.png" alt="icono logo de WhatsApp"
               /></a>
               <a href="https://g.co/kgs/TkT4aEA " target="_blank" rel="noopener"
-                ><img class="logotipo-footer" src="../img/logoUbicacion.png" alt="icono logo de ubicacion"
+                ><img class="footer-logotipo" src="../img/logoUbicacion.png" alt="icono logo de ubicacion"
               /></a>
             </div>
           </div>

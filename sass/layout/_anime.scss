@@ -1,23 +1,24 @@
 /*fan*/
 .section-fan {
   background-color: $color-cuatro;
-}
-.card-anime {
-  background-color: #ffe1ff;
-  max-width: 25rem;
-  border: 1px solid $color-dos;
-  border-radius: 1rem;
-  margin: 0 15px;
-  transition: transform 0.5s;
 
-  &:hover {
-    transform: scale(1.03);
+  .card-anime {
+    background-color: #ffe1ff;
+    max-width: 25rem;
+    border: 1px solid $color-dos;
+    border-radius: 1rem;
+    margin: 0 15px;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
-}
-.anime-contenedor-flex {
-  gap: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  .anime-contenedor-flex {
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }

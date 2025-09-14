@@ -1,8 +1,27 @@
 /*footer*/
 .footer {
   background-color: $color-seis;
+  h3 {
+    padding: 20px;
+    margin: 30px;
+  }
+  h4 {
+    color: $color-cuatro;
+    margin-bottom: 25px;
+    border-bottom: 2px solid $color-uno;
+  }
+  ul li a {
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: $color-uno;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $color-cinco;
+      padding-left: 6px;
+    }
+  }
 }
-.logotipo-footer {
+.footer-logotipo {
   width: 2.5rem;
   height: 40px;
   object-fit: cover;
@@ -10,23 +29,5 @@
 
   &:hover {
     transform: scale(1.15);
-  }
-}
-.footer h3 {
-  padding: 20px;
-  margin: 30px;
-}
-.footer-links h4 {
-  margin-bottom: 25px;
-  border-bottom: 2px solid $color-uno;
-}
-.footer-links ul li a {
-  text-decoration: none;
-  margin-bottom: 15px;
-  color: $color-uno;
-  transition: all 0.3s ease;
-  &:hover {
-    color: $color-cinco;
-    padding-left: 6px;
   }
 }

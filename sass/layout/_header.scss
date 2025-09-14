@@ -24,7 +24,7 @@
 .nosotros-header {
   width: 100%;
   min-height: 95vh;
-  background: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.4));
+  background: linear-gradient(rgba(5, 7, 9, 0.8), rgba(5, 7, 12, 0.5));
 }
 .productos-header {
   width: 100%;
@@ -43,14 +43,12 @@
     color: $color-cuatro;
   }
 }
-/*h1, parrafo, botones*/
+/* index-h1, botones*/
 .index-h1 {
   font-size: $font-size-xl;
   margin-top: 5.5rem;
 }
-.header-contenedor-inferior {
-  height: 95vh;
-}
+
 .boton-header-inicio,
 .btn {
   width: 80%;

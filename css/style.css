@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import 'animate.css';
-.Información-cultural, .form-width, .mesa, .index-header,
+.Información-cultural, .form-login, .form-contacto, .mesa, .index-header,
 .promociones-header,
 .contacto-header,
 .login-header {
@@ -23,7 +23,7 @@
   border-radius: 0.8rem;
 }
 
-.face-equipo, .face {
+.face-equipo, .cliente {
   width: 120px;
   height: 120px;
   object-fit: cover;
@@ -60,7 +60,7 @@
 .nosotros-header {
   width: 100%;
   min-height: 95vh;
-  background: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.4));
+  background: linear-gradient(rgba(5, 7, 9, 0.8), rgba(5, 7, 12, 0.5));
 }
 
 .productos-header {
@@ -84,14 +84,10 @@
   color: #7e60bf;
 }
 
-/*h1, parrafo, botones*/
+/* index-h1, botones*/
 .index-h1 {
   font-size: 40px;
   margin-top: 5.5rem;
-}
-
-.header-contenedor-inferior {
-  height: 95vh;
 }
 
 .boton-header-inicio,
@@ -125,30 +121,35 @@
   margin: 0 auto;
 }
 
-.card-productos {
+.cards-contenedor-flex {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.cards-contenedor-flex .card-productos {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   background-color: #ffe1ff;
   max-width: 25rem;
   border: 2px solid #000000;
   transition: transform 0.5s;
 }
-.card-productos:hover {
+.cards-contenedor-flex .card-productos:hover {
   transform: scale(1.03);
 }
 
 /*Opiniones*/
-.starts {
-  width: 100px;
-}
-
-.opiniones-content {
-  margin-top: 35px;
-}
-
 .opiniones {
   padding: 5px;
   background-color: #e4b1f0;
 }
-
+.opiniones .starts {
+  width: 100px;
+}
 .opiniones h2 {
   font-size: 35px;
   margin: 2rem;
@@ -179,7 +180,7 @@
   grid-area: 3/4/4/6;
 }
 
-.face {
+.cliente {
   border-radius: 50%;
   border: 3px solid #ffe1ff;
   margin: 15px auto;
@@ -189,8 +190,7 @@
 .section-fan {
   background-color: #7e60bf;
 }
-
-.card-anime {
+.section-fan .card-anime {
   background-color: #ffe1ff;
   max-width: 25rem;
   border: 1px solid #000000;
@@ -198,11 +198,10 @@
   margin: 0 15px;
   transition: transform 0.5s;
 }
-.card-anime:hover {
+.section-fan .card-anime:hover {
   transform: scale(1.03);
 }
-
-.anime-contenedor-flex {
+.section-fan .anime-contenedor-flex {
   gap: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -217,7 +216,6 @@
   background-attachment: fixed;
   height: 100%;
 }
-
 .mesa h4 {
   font-size: 2rem;
   padding: 15px;
@@ -228,50 +226,56 @@
 .footer {
   background-color: #ffe1ff;
 }
-
-.logotipo-footer {
-  width: 2.5rem;
-  height: 40px;
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-.logotipo-footer:hover {
-  transform: scale(1.15);
-}
-
 .footer h3 {
   padding: 20px;
   margin: 30px;
 }
-
-.footer-links h4 {
+.footer h4 {
+  color: #7e60bf;
   margin-bottom: 25px;
   border-bottom: 2px solid #433878;
 }
-
-.footer-links ul li a {
+.footer ul li a {
   text-decoration: none;
   margin-bottom: 15px;
   color: #433878;
   transition: all 0.3s ease;
 }
-.footer-links ul li a:hover {
+.footer ul li a:hover {
   color: #e4b1f0;
   padding-left: 6px;
 }
 
+.footer-logotipo {
+  width: 2.5rem;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.footer-logotipo:hover {
+  transform: scale(1.15);
+}
+
 /*main contacto/login/form*/
-.form-width {
-  background-image: url(../img/formbg5.jpg);
+.contacto-h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.form-contacto {
+  background: linear-gradient(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
   flex-direction: column;
   align-items: center;
+  max-width: 350px;
 }
 
-.input-container {
+.input-container-contacto {
   position: relative;
 }
-
-.input-container > i {
+.input-container-contacto i {
   padding: 14px;
   border-radius: 50%;
   color: #ffffff;
@@ -281,24 +285,19 @@
   right: 8px;
   background: linear-gradient(#e4b1f0, #000000);
 }
-
-.input-container > input {
+.input-container-contacto input {
   padding: 20px 50px 20px 15px;
   width: 100%;
   margin-bottom: 25px;
   border-radius: 35px;
-  background-color: transparent;
+  background-color: rgba(250, 182, 247, 0.432);
   border: 2px solid #000000;
   font-size: 17px;
   outline: none;
   color: #000000;
 }
 
-.form-width {
-  max-width: 400px;
-}
-
-.logo-width {
+.logo-form-contacto {
   width: 80px;
 }
 
@@ -328,12 +327,73 @@
 }
 
 /*h1 contacto,login,promociones*/
-.h1-titulo {
+.login-h1 {
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   padding-top: 50px;
   margin-top: 50px;
+}
+
+.form-login {
+  background: linear-gradient(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+}
+
+.input-container-login {
+  position: relative;
+}
+.input-container-login i {
+  padding: 14px;
+  border-radius: 50%;
+  color: #ffffff;
+  position: absolute;
+  font-size: 20px;
+  top: 7px;
+  right: 8px;
+  background: linear-gradient(#e4b1f0, #000000);
+}
+.input-container-login input {
+  padding: 20px 50px 20px 15px;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 35px;
+  background-color: rgba(250, 182, 247, 0.432);
+  border: 2px solid #000000;
+  font-size: 17px;
+  outline: none;
+  color: #000000;
+}
+
+.logo-form-login {
+  width: 80px;
+}
+
+.btn {
+  box-shadow: 8px 8px 8px 0 #000000;
+  font-size: 16px;
+  width: 100%;
+  min-width: 120px;
+  box-sizing: border-box;
+  background: linear-gradient(#e4b1f0, #000000);
+  background-color: #433878;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(60.3, 50.4, 108);
+}
+.btn {
+  transition: transform 0.5s;
+}
+.btn:hover {
+  transform: scale(1.03);
 }
 
 /*equipo*/
@@ -396,8 +456,10 @@
 }
 
 .nosotros-sarang {
+  font-size: 50px;
+  color: #e4b1f0;
   opacity: 0;
-  animation: sarang 2s infinite;
+  animation: sarang 4s infinite;
 }
 
 @keyframes sarang {
@@ -462,7 +524,6 @@
 .popular {
   display: none;
 }
-
 .popular h2 {
   color: #ffffff;
   font-size: 35px;
@@ -479,8 +540,7 @@
   font-size: 35px;
   margin: 50px auto;
 }
-
-.product hr {
+.product h2 hr {
   border: 2px solid #ffe1ff;
   width: 100%;
   margin-bottom: 40px;
@@ -570,11 +630,6 @@
   color: #ffffff;
 }
 
-.product-txt {
-  padding: 50px 30px;
-  background-color: #e4b1f0;
-}
-
 .product-txt-galleta {
   background-color: #7e60bf;
 }
@@ -582,17 +637,19 @@
   text-decoration: none;
 }
 
+.product-txt {
+  padding: 50px 30px;
+  background-color: #e4b1f0;
+}
 .product-txt h3 {
   font-size: 25px;
   color: #433878;
   margin-bottom: 20px;
 }
-
 .product-txt p {
   color: #ffffff;
   font-size: 18px;
 }
-
 .product-txt a {
   text-decoration: none;
 }
@@ -615,7 +672,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .productos-h1 h1 {
   color: #ffffff;
   font-size: 3.5rem;
@@ -653,6 +709,10 @@
   align-items: center;
 }
 
+.animate__animated.animate__flip {
+  --animate-duration: 3s;
+}
+
 /*@media query*/
 @media (min-width: 991px) {
   .opiniones-content {
@@ -661,24 +721,6 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-  }
-  .header-contenedor-inferior {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .productos-contenedor-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: normal;
-  }
-  .footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: space-between;
   }
   .index-h1 {
     font-size: 50px;
@@ -703,7 +745,7 @@
     width: 75%;
     margin: 0 auto 4rem auto;
     display: flex;
-    gap: 320px;
+    gap: 275px;
   }
   .anime-contenedor-flex {
     gap: 2rem;
@@ -714,12 +756,11 @@
     justify-content: center;
     align-items: center;
   }
-}
-@media (max-width: 991px) {
-  .card-productos {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw;
+  .cards-contenedor-flex {
+    gap: 2rem;
+    margin: 0 auto;
+    width: 70vw;
+    padding: 0 10px 0 10px;
   }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -730,11 +771,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-  }
-  .card-productos {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
   }
 }
 @media (min-aspect-ratio: 16/9) {
