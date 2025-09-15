@@ -23,7 +23,8 @@
   }
   .popular {
     padding: 100px 0;
-    @include flex(flex, column, center);
+    display: flex;
+    flex-direction: column;
   }
   .boton-header-inicio {
     width: 75%;
@@ -67,7 +68,6 @@
     width: 120px;
     margin: 0 auto;
     padding: 0;
-    @include flex(flex, column, center);
   }
 }
 @media (min-aspect-ratio: 16/9) {

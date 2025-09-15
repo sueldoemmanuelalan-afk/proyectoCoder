@@ -12,6 +12,13 @@
   transform-style: preserve-3d;
   animation: rotate 30s linear infinite;
 }
+.slider {
+  @for $i from 1 through 8 {
+    span:nth-child(#{$i}) {
+      --i: #{$i};
+    }
+  }
+}
 @keyframes rotate {
   0% {
     transform: perspective(1000px) rotateY(0deg);
