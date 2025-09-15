@@ -60,6 +60,10 @@
   }
 }
 /*popular*/
+.destacados {
+  background-color: $color-uno;
+  width: 100%;
+}
 .popular {
   display: none;
 
@@ -165,10 +169,6 @@
   a {
     text-decoration: none;
   }
-}
-.destacados {
-  background-color: $color-uno;
-  width: 100%;
 }
 .section-galleta {
   background-color: $color-cinco;

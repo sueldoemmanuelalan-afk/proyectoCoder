@@ -36,7 +36,7 @@
 .contacto-header,
 .login-header {
   background-attachment: fixed;
-  height: 95vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -59,13 +59,13 @@
 
 .nosotros-header {
   width: 100%;
-  min-height: 95vh;
+  height: 100vh;
   background: linear-gradient(rgba(5, 7, 9, 0.8), rgba(5, 7, 12, 0.5));
 }
 
 .productos-header {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(rgba(7, 7, 7, 0.6), rgba(5, 7, 12, 0.3));
 }
 
@@ -108,7 +108,7 @@
   background-color: #433878;
 }
 
-/*carousel index*/
+/*carousel /slider index*/
 .slider {
   display: none;
   position: relative;
@@ -691,6 +691,11 @@
   }
 }
 /*popular*/
+.destacados {
+  background-color: #433878;
+  width: 100%;
+}
+
 .popular {
   display: none;
 }
@@ -815,11 +820,6 @@
 }
 .product-txt a {
   text-decoration: none;
-}
-
-.destacados {
-  background-color: #433878;
-  width: 100%;
 }
 
 .section-galleta {
