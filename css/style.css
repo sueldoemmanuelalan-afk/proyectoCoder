@@ -203,7 +203,7 @@
   width: 100px;
 }
 .opiniones h2 {
-  font-size: 35px;
+  font-size: 40px;
   margin: 2rem;
   line-height: 1;
 }
@@ -269,7 +269,7 @@
   height: 100%;
 }
 .mesa h4 {
-  font-size: 2rem;
+  font-size: 40px;
   padding: 15px;
   margin: 20px;
 }
@@ -579,7 +579,7 @@
 }
 
 .nosotros-sarang {
-  font-size: 50px;
+  font-size: 40px;
   color: #e4b1f0;
   opacity: 0;
   animation: sarang 4s infinite;
@@ -631,15 +631,15 @@
 }
 
 .caja {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: auto;
   padding: 30px 30px;
   width: 100%;
   height: 150px;
   border: 1px solid #ffffff;
   animation: change-color 5s infinite linear normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .caja:hover {
@@ -683,7 +683,7 @@
 
 /*productos almacen, bebidas, snack y dulces*/
 .h2 {
-  font-size: 35px;
+  font-size: 40px;
   margin: 50px auto;
   color: #ffe1ff;
 }
@@ -765,7 +765,7 @@
   border-radius: 25px;
   border: 2px solid #7e60bf;
   color: #000000;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   align-self: flex-end;
   background-color: #ffe1ff;
@@ -787,7 +787,7 @@
 }
 .product-txt p {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
 }
 .product-txt a {
   text-decoration: none;
@@ -863,7 +863,6 @@
     margin-top: 15rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
   }
   .carousel-inner {
@@ -876,6 +875,7 @@
     padding: 100px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .boton-header-inicio {
     width: 75%;
@@ -887,9 +887,9 @@
     gap: 2rem;
     margin: 0 auto;
     width: 90vw;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
   }
   .cards-contenedor-flex {
@@ -920,9 +920,9 @@
     width: 120px;
     margin: 0 auto;
     padding: 0;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 @media (min-aspect-ratio: 16/9) {

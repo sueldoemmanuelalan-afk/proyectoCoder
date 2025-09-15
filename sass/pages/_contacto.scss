@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 25px;
-  background: linear-gradient(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
+  @include backgroundLinear(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
   @extend %backgroundHeader;
 }
 .input-container-contacto {
@@ -18,7 +18,7 @@
     border-radius: 50%;
     color: $color-tres;
     position: absolute;
-    font-size: 20px;
+    font-size: $font-size-lg;
     top: 7px;
     right: 8px;
     @include backgroundLinear($color-cinco, $color-dos);
@@ -30,7 +30,7 @@
     border-radius: 35px;
     background-color: (rgba(236, 230, 236, 0.349));
     border: 2px solid $color-dos;
-    font-size: 20px;
+    font-size: $font-size-lg;
     font-weight: 600;
     outline: none;
     color: $color-dos;
