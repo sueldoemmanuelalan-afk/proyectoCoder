@@ -1,0 +1,63 @@
+/* header todos las pag*/
+.index-header,
+.promociones-header,
+.contacto-header,
+.login-header {
+  background-attachment: fixed;
+  height: 95vh;
+  width: 100%;
+  @extend %backgroundHeader;
+}
+.index-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.3)), url(../img/BgHeaderIndex.jpg);
+  height: 100vh;
+}
+.promociones-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.3)), url(../img/BgHeaderPromociones.jpg);
+}
+.contacto-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.7)), url(../img/BgHeaderContacto.jpg);
+}
+.login-header {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.9)), url(../img/BgHeaderLogin.jpg);
+}
+.nosotros-header {
+  width: 100%;
+  min-height: 95vh;
+  background: linear-gradient(rgba(5, 7, 9, 0.8), rgba(5, 7, 12, 0.5));
+}
+.productos-header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(7, 7, 7, 0.6), rgba(5, 7, 12, 0.3));
+}
+/*nav*/
+.navbar {
+  z-index: 1000;
+  background-color: $color-seis;
+}
+.navbar-collapse ul li a {
+  @include textStyle($font-size-lg, 600);
+
+  &:hover {
+    color: $color-cuatro;
+  }
+}
+/* index-h1, botones*/
+.index-h1 {
+  font-size: $font-size-xl;
+  margin-top: 5.5rem;
+}
+
+.boton-header-inicio,
+.btn {
+  width: 80%;
+  margin: 0 auto 2rem auto;
+}
+.boton-header-inicio a {
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}

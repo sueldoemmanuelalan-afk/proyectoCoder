@@ -1,0 +1,39 @@
+@use 'sass:color';
+@import './utilities/variables';
+@import './utilities/mixixns';
+@import './utilities/extends';
+@import './layout/header';
+@import './layout/main';
+@import './layout/anime';
+@import './layout/mesa';
+@import './layout/footer';
+@import './pages/contacto';
+@import './pages/login';
+@import './pages/nosotros';
+@import './pages/productos';
+@import './pages/promociones';
+@import './mq/mq';
+@import 'animate.css';
+
+/*estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  max-width: $max-width-container;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+.logo {
+  width: 70px;
+  margin-bottom: auto;
+}
+body {
+  font-family: $font-family-base;
+}

@@ -1,0 +1,133 @@
+/*main*/
+.main {
+  background-color: $color-uno;
+}
+/*carousel index*/
+
+.slider {
+  display: none;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.slider span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+}
+.slider span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+}
+
+.slider span:hover img {
+  transform: translateY(-50px) scale(1.2);
+}
+.carousel {
+  display: none;
+}
+.p-carousel {
+  margin-top: 5rem;
+}
+.carousel-inner {
+  height: 450px;
+  width: 275px;
+  margin: auto;
+  padding: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+/*card productos*/
+.cards-contenedor-flex {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+
+  .card-productos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: $color-seis;
+    max-width: 25rem;
+    border: 2px solid $color-dos;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+/*Opiniones*/
+.opiniones {
+  padding: 5px;
+  background-color: $color-cinco;
+  .starts {
+    width: 100px;
+  }
+  h2 {
+    font-size: 35px;
+    margin: 2rem;
+    line-height: 1;
+  }
+}
+.opinion-1,
+.opinion-2,
+.opinion-3,
+.opinion-4,
+.opinion-5,
+.opinion-6 {
+  @extend %opinionesGrid;
+}
+.opinion-1 {
+  @include gridArea(1, 1, 4, 2);
+}
+.opinion-2 {
+  @include gridArea(1, 2, 2, 5);
+}
+.opinion-3 {
+  @include gridArea(3, 2, 4, 4);
+}
+.opinion-4 {
+  @include gridArea(2, 2, 3, 5);
+}
+.opinion-5 {
+  @include gridArea(1, 5, 3, 6);
+}
+.opinion-6 {
+  @include gridArea(3, 4, 4, 6);
+}
+.cliente {
+  border-radius: 50%;
+  border: 3px solid $color-seis;
+  margin: 15px auto;
+  @extend %faceEquipo;
+}

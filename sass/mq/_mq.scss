@@ -1,0 +1,98 @@
+/*@media query*/
+@media (min-width: 991px) {
+  .slider {
+    display: flex;
+  }
+  .opiniones-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  .index-h1 {
+    font-size: 50px;
+    margin-top: 15rem;
+    @include flexRow(row, center, center);
+  }
+  .carousel-inner {
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    padding: 0;
+  }
+  .popular {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .boton-header-inicio {
+    width: 75%;
+    margin: 0 auto 4rem auto;
+    display: flex;
+    gap: 275px;
+  }
+  .anime-contenedor-flex {
+    gap: 2rem;
+    margin: 0 auto;
+    width: 90vw;
+    @include flexRow(row, center, center);
+  }
+  .cards-contenedor-flex {
+    gap: 2rem;
+    margin: 0 auto;
+    width: 70vw;
+    padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 990px) {
+  .carousel {
+    display: flex;
+  }
+  .p-carousel {
+    margin-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .form-iframe {
+    flex-direction: column;
+  }
+  .form-text-a {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .popular-content img {
+    width: 120px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-2 {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-2 {
+    width: auto;
+    height: 100%;
+  }
+}

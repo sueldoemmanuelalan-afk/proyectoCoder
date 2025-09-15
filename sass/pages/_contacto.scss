@@ -1,0 +1,79 @@
+/*main contacto form*/
+.contacto-h1 {
+  @include textStyle($font-size-lg, bold, $color-tres);
+  padding-top: 40px;
+  margin-top: 40px;
+}
+.form-contacto {
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  background: linear-gradient(rgba(59, 64, 70, 0.5), rgba(58, 63, 75, 0.5));
+  @extend %backgroundHeader;
+}
+.input-container-contacto {
+  position: relative;
+  i {
+    padding: 14px;
+    border-radius: 50%;
+    color: $color-tres;
+    position: absolute;
+    font-size: 20px;
+    top: 7px;
+    right: 8px;
+    @include backgroundLinear($color-cinco, $color-dos);
+  }
+  input {
+    padding: 20px 50px 20px 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: (rgba(236, 230, 236, 0.349));
+    border: 2px solid $color-dos;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    color: $color-dos;
+  }
+}
+.logo-form-contacto {
+  width: 80px;
+}
+.btn {
+  box-shadow: $shadow-base;
+  font-size: $font-size-base;
+  width: 100%;
+  min-width: 120px;
+  box-sizing: border-box;
+  @include backgroundLinear($color-cinco, $color-dos);
+  @include buttonStyle($color-uno, $color-tres, $radius-md);
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+.form-iframe {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  border-radius: 10px;
+}
+.form-map {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+.form-contacto {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 0;
+}

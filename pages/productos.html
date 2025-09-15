@@ -1,30 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarang</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <!--body-->
-  <body class="body-productos">
+  <body>
     <!--header-->
-    <header class="productos-header py-5 text-start">
-      <nav
-        class="navbar navbar-expand-lg bg-danger-subtle p-2 position-fixed top-0 w-100"
-      >
+    <header class="productos-header">
+      <nav class="navbar navbar-expand-lg p-1 position-fixed top-0 w-100">
         <div class="container-fluid">
           <img src="../img/logoSarang.png" class="logo" alt="logotipo sarang" />
           <button
@@ -34,30 +49,19 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse flex-grow-0"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
               <li class="nav-item">
-                <a
-                  class="nav-link active text-danger"
-                  aria-current="page"
-                  href="../index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link active text-danger" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/promociones.html"
-                  >Promociones</a
-                >
+                <a class="nav-link" href="../pages/promociones.html">Promociones</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/contacto.html">Contacto</a>
@@ -72,75 +76,49 @@
           </div>
         </div>
       </nav>
-      <div class="h1-titulo">
-        <h1 class="display-5 fw-bold text-center mb-5">Productos</h1>
+      <div class="productos-h1">
+        <h1 class="animate__animated animate__fadeIn">Productos</h1>
       </div>
-      <p class="text-center text-white px-3 display-5 fw-bold p-product">
-        Descubrí nuestra selección de productos importados: snacks, fideos,
-        salsas, condimentos, bebidas y más. Todo organizado por categorías para
-        que encuentres fácilmente lo que estás buscando.
-      </p>
+      <video autoplay loop muted playsinline class="video-2">
+        <source src="../video/videoBgProductos.mp4" type="video/mp4" />
+      </video>
     </header>
-    <section class="container py-5">
-      <h2 class="text-center p-5 text-white fs-2 fw-bold">
-        Productos Destacados
-      </h2>
-      <section class="popular container">
+    <section class="py-5 destacados w-100">
+      <div class="destacados-2">
+        <h2 class="caja fw-bold text-center text-white">Productos Destacados</h2>
+      </div>
+      <section class="popular text-center container">
         <div class="popular-content d-flex align-items-center flex-nowrap">
-          <img
-            src="../img/popular1.jpg"
-            alt="imagen misso x1kg"
-            class="popular-img"
-          />
-          <img
-            src="../img/popular2.jpg"
-            alt="imagen misso x340g"
-            class="popular-img"
-          />
-          <img
-            src="../img/popular3.jpg"
-            alt="imagen sake de ciruela"
-            class="popular-img"
-          />
-          <img
-            src="../img/popular4.jpg"
-            alt="imagen jugo cinnamoroll"
-            class="popular-img"
-          />
-          <img
-            src="../img/popular5.jpg"
-            alt="imagen salsa tonkatsu"
-            class="popular-img"
-          />
-          <img
-            src="../img/popular6.jpg"
-            alt="imagen jugo de mango"
-            class="popular-img"
-          />
-          <img
-            src="../img/popular7.jpg"
-            alt="imagen ajinomoto x100g"
-            class="popular-img"
-          />
+          <img src="../img/popular1.jpg" alt="paquete de misso x1kg" />
+          <img src="../img/popular2.jpg" alt="frasco de misso x340g" />
+          <img src="../img/popular3.jpg" alt="botella de sake ciruela" />
+          <img src="../img/popular4.jpg" alt="botella de jugo cinnamoroll" />
+          <img src="../img/popular5.jpg" alt="botella de salsa tonkatsu" />
+          <img src="../img/popular6.jpg" alt="lata de jugo de mango" />
+          <img src="../img/popular7.jpg" alt="caja de ajinomoto x100g" />
         </div>
       </section>
-      <p class="text-center text-white mt-5">
-        misso, sake de ciruela, jugos de mango, salsa tonkatsu, ajinomoto y
-        más...
+      <p class="text-center text-white mt-1 mb-5 fs-3">
+        misso, sake de ciruela, jugos de mango, salsa tonkatsu, ajinomoto y más...
+      </p>
+      <br />
+      <p class="text-center text-white px-3 fw-bold fs-2">
+        Descubrí nuestra selección de productos importados: snacks, fideos, salsas, condimentos, bebidas y más. Todo
+        organizado por categorías para que encuentres fácilmente lo que estás buscando.
       </p>
     </section>
     <!--main-->
-    <main>
-      <section class="product d-flex flex-column container">
+    <main class="main-productos">
+      <section class="d-flex flex-column container">
         <!--almacen-->
-        <h2 class="text-white" id="almacen">Almacén</h2>
-        <hr />
-        <div class="box-container-1">
+        <h2 class="h2" id="almacen">Almacén</h2>
+        <hr class="hr" />
+        <div class="caja-contenedor-productos">
           <div class="box-1">
-            <img src="../img/almacen1.jpg" alt="imagen ramen xin pote" />
+            <img src="../img/almacen1.jpg" alt="pote de ramen marca xin" />
             <div class="product-txt">
               <h3>Ramen xin pote</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Fideos coreanos instantáneos picantes en vaso.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -148,10 +126,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen2.jpg" alt="imagen ramen tdr" />
+            <img src="../img/almacen2.jpg" alt="pote de ramen marca tdr" />
             <div class="product-txt">
               <h3>Ramen TDR</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Fideos instantáneos con sabor a hueso de cerdo picante.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -159,10 +137,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen3.jpg" alt="imagen ramen neoguri" />
+            <img src="../img/almacen3.jpg" alt="paquete de ramen marca neoguri" />
             <div class="product-txt">
               <h3>Ramen Neoguri</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Fideos instantáneos tipo ramen coreano, sabor mariscos.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -170,10 +148,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen4.jpg" alt="imagen ramen pollo guisado" />
+            <img src="../img/almacen4.jpg" alt="paquete de ramen de pollo guisado" />
             <div class="product-txt">
               <h3>Ramen pollo</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Fideos de Pollo Estofado con Bayas de Goji y Pescado.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -181,10 +159,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen5.jpg" alt="imagen ramen buldak" />
+            <img src="../img/almacen5.jpg" alt="pote de ramen marca buldak" />
             <div class="product-txt">
               <h3>Ramen picante</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Ramen coreano conocido por su nivel extremo de picante.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -192,10 +170,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen6.jpg" alt="imagen buldak chedar pote" />
+            <img src="../img/almacen6.jpg" alt="pote de ramen de cheddar marca buldak" />
             <div class="product-txt">
               <h3>Ramen cheddar</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Ramen Samyang Buldak sabor a Pollo Picante con Queso</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -203,10 +181,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen7.jpg" alt="imagen ramen ternera" />
+            <img src="../img/almacen7.jpg" alt="paquete de ramen de ternera" />
             <div class="product-txt">
               <h3>Ramen ternera</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Fideos Instantáneos de Carne con Chucrut Laotan.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -214,10 +192,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen8.jpg" alt="imagen ramen udon pote" />
+            <img src="../img/almacen8.jpg" alt="pote de ramen de la marca Udon" />
             <div class="product-txt">
               <h3>Ramen Udon</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Sopa de fideos instantáneos con sabor a tempura.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -225,10 +203,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen9.jpg" alt="imagen buldak 4 quesos" />
+            <img src="../img/almacen9.jpg" alt="paquete de ramen 4 quesos marca buldak" />
             <div class="product-txt">
               <h3>Ramen 4 quesos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>fideos picantes con sabor a pollo y cuatro quesos.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -236,13 +214,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img
-              src="../img/almacen10.jpg"
-              alt="imagen ramen barbacoa japonesa"
-            />
+            <img src="../img/almacen10.jpg" alt="paquete de ramen sabor barbacoa japonesa" />
             <div class="product-txt">
               <h3>Ramen barbacoa</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Fideos instantáneos sabor a cerdo asado japonés</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -250,10 +225,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen11.jpg" alt="imagen arroz para sushi" />
+            <img src="../img/almacen11.jpg" alt="paque individual de arroz para sushi x1kg" />
             <div class="product-txt">
               <h3>Arroz para sushi 1kg</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Arroz específico para la preparación de sushi.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -261,10 +236,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen12.jpg" alt="imagen nabo para sushi" />
+            <img src="../img/almacen12.jpg" alt="paquete de nabos para sushi x4 unidades" />
             <div class="product-txt">
               <h3>Nabo para sushi</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Rábano encurtido, o Takuan en la cocina japonesa.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -272,10 +247,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen13.jpg" alt="imagen algas redondas" />
+            <img src="../img/almacen13.jpg" alt="paquete de algas redondas para sushi" />
             <div class="product-txt">
               <h3>Algas redondas</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Algas marinas tostadas, también conocidas como nori.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -283,10 +258,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen14.jpg" alt="imagen ramen picante" />
+            <img src="../img/almacen14.jpg" alt="pote de ramen picante" />
             <div class="product-txt">
               <h3>Ramen picante</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Fideos instantáneos picante, sabor a carne de res.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -294,10 +269,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen15.jpg" alt="imagen salsa de soja" />
+            <img src="../img/almacen15.jpg" alt="botella de salsa de soja" />
             <div class="product-txt">
               <h3>Salsa de soja</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Salsa de soja con reducción de sal del 30%.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -305,10 +280,10 @@
             </div>
           </div>
           <div class="box-1">
-            <img src="../img/almacen16.jpg" alt="imagen topokki bulgogi" />
+            <img src="../img/almacen16.jpg" alt="pote de pastel de arroz marca topokki bulgogi" />
             <div class="product-txt">
               <h3>Topokki Bulgogi</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Pastel de arroz coreano con sabor a Bulgogi.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -318,16 +293,16 @@
         </div>
         <div class="load-more" id="load-more-1">Cargar más</div>
       </section>
-      <section class="product d-flex flex-column container">
+      <section class="d-flex flex-column container">
         <!--bebidas-->
-        <h2 class="text-white" id="bebidas">Bebidas</h2>
-        <hr />
-        <div class="box-container-2">
+        <h2 class="h2" id="bebidas">Bebidas</h2>
+        <hr class="hr" />
+        <div class="caja-contenedor-productos">
           <div class="box-2">
-            <img src="../img/bebida1.jpg" alt="imagen jugo mix frutal" />
+            <img src="../img/bebida1.jpg" alt="lata de jugo mix frutal" />
             <div class="product-txt">
-              <h3>Jugo mix frutal</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3>Jugo de fruta</h3>
+              <p>Bebida de Jugo de Frutas Mixtas de 500ml.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -335,10 +310,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida2.jpg" alt="imagen cafe frio" />
+            <img src="../img/bebida2.jpg" alt="paquete de cafe frio" />
             <div class="product-txt">
               <h3>Café frio</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Café Americano helado con sabor a vainilla.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -346,10 +321,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida3.jpg" alt="imagen jugo sin gas pororo" />
+            <img src="../img/bebida3.jpg" alt="botella de jugo sin gas pororo" />
             <div class="product-txt">
               <h3>Jugo Pororo</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebidas de jugo de frutas diseñada para niños.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -357,10 +332,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida4.jpg" alt="imagen jugo cocopalm uva" />
+            <img src="../img/bebida4.jpg" alt="lata de jugo cocopalm sabor uva" />
             <div class="product-txt">
               <h3>Jugo de uva</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebida coreana con trozos de gelatina de coco sabor uva.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -368,10 +343,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida5.jpg" alt="imagen cafe especial bts" />
+            <img src="../img/bebida5.jpg" alt="botellas de cafe frio especial bts" />
             <div class="product-txt">
               <h3>Café BTS</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebida de café frío, con la temática de BTS (grupo de K-pop).</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -379,10 +354,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida6.jpg" alt="imagen cafe especial bts" />
+            <img src="../img/bebida6.jpg" alt="botellas de cafe frio especial bts" />
             <div class="product-txt">
               <h3>Café BTS</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebida de café frío, con la temática de BTS (grupo de K-pop).</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -390,10 +365,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida7.jpg" alt="imagen jugos hata" />
+            <img src="../img/bebida7.jpg" alt="botellas de jugos Hata" />
             <div class="product-txt">
               <h3>Jugos HATA</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Hata Ramune, soda popular efervescente japonesa.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -401,10 +376,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida8.jpg" alt="imagen jugo con litchi" />
+            <img src="../img/bebida8.jpg" alt="lata de jugo con litchi" />
             <div class="product-txt">
               <h3>Jugo con Litchi</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebida de jugo con pulpa de fruta sabor a Lychee.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -412,24 +387,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img
-              src="../img/bebida9.jpg"
-              alt="imagen jugo sabor durazno y frutilla"
-            />
-            <div class="product-txt">
-              <h3>Jugo frutilla</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <p class="fs-5 text-danger">$500</p>
-                <a href="#" class="btn-2">Comprar</a>
-              </div>
-            </div>
-          </div>
-          <div class="box-2">
-            <img src="../img/bebida10.jpg" alt="imagen jugo durazno" />
+            <img src="../img/bebida9.jpg" alt="lata de jugo sabor durazno y frutilla" />
             <div class="product-txt">
               <h3>Jugo durazno</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebida con sabor a durazno y trozos de gelatina de coco.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -437,10 +398,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida11.jpg" alt="imagen gaseosa one piece" />
+            <img src="../img/bebida10.jpg" alt="latas de jugo sabor durazno" />
             <div class="product-txt">
-              <h3>Gaseosa O.P</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3>Jugo melocotón</h3>
+              <p>Bebida de Melocotón "Famous House".</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -448,10 +409,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida12.jpg" alt="imagen gaseosa pokemon" />
+            <img src="../img/bebida11.jpg" alt="latas de gaseosa con dibujos de one piece" />
             <div class="product-txt">
-              <h3>Gaseosa P</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3>Gaseosa One P.</h3>
+              <p>Agua carbonatada miel y limon de One Piece.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -459,10 +420,21 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida13.jpg" alt="imagen gaseosa sailor moon" />
+            <img src="../img/bebida12.jpg" alt="latas de gaseosa con dibujos de pokemon" />
+            <div class="product-txt">
+              <h3>Gaseosa Pokémon</h3>
+              <p>Gaseosa Qdol con temática de Pokémon.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="fs-5 text-danger">$500</p>
+                <a href="#" class="btn-2">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="box-2">
+            <img src="../img/bebida13.jpg" alt="latas de gaseosa con dibujos de sailor moon" />
             <div class="product-txt">
               <h3>Gaseosa S.M</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebidas de agua con gas temática de "Sailor Moon".</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -470,10 +442,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida14.jpg" alt="imagen gaseosa dragon ball" />
+            <img src="../img/bebida14.jpg" alt="lata de gaseosa con dibujo de dragon de dragon ball" />
             <div class="product-txt">
               <h3>Gaseosa D.B</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebida con gas Dragon Ball "Shenron" Sabor Naranja.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -481,10 +453,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img src="../img/bebida15.jpg" alt="imagen sake y soju" />
+            <img src="../img/bebida15.jpg" alt="botellas de sake y soju" />
             <div class="product-txt">
               <h3>Sake y Soju</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebida alcohólica coreana Soju Jinro Chamisul.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -492,13 +464,10 @@
             </div>
           </div>
           <div class="box-2">
-            <img
-              src="../img/bebida16.jpg"
-              alt="imagen energizante dragon ball"
-            />
+            <img src="../img/bebida16.jpg" alt="latas de energizante con dibujos de dragon ball z" />
             <div class="product-txt">
               <h3>Energizante D.B</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bebida energética con temática de Dragon Ball Z.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -508,16 +477,16 @@
         </div>
         <div class="load-more" id="load-more-2">Cargar más</div>
       </section>
-      <section class="product d-flex flex-column container">
+      <section class="d-flex flex-column container">
         <!--snacks y golosinas-->
-        <h2 class="text-white" id="snack">Snacks y Golosinas</h2>
-        <hr />
-        <div class="box-container-3">
+        <h2 class="h2" id="snack">Snacks y Golosinas</h2>
+        <hr class="hr" />
+        <div class="caja-contenedor-productos">
           <div class="box-3">
-            <img src="../img/snack1.jpg" alt="imagen pochoclos" />
+            <img src="../img/snack1.jpg" alt="paquete de pochoclos saborizados" />
             <div class="product-txt">
               <h3>Pochoclos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Snack de palomitas de maíz con sabor a wasabi y mayonesa.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -525,10 +494,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack2.jpg" alt="imagen aros de cebolla" />
+            <img src="../img/snack2.jpg" alt="paquete de aros de cebolla" />
             <div class="product-txt">
               <h3>Aros de cebolla</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Snack coreano crujiente con sabor a cebolla.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -536,13 +505,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img
-              src="../img/snack3.jpg"
-              alt="imagen aros de cebolla picantes"
-            />
+            <img src="../img/snack3.jpg" alt="paquete de aros de cebolla picantes" />
             <div class="product-txt">
               <h3>Aros de cebolla</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Snack coreano crujiente con sabor a cebolla y picante.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -550,13 +516,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img
-              src="../img/snack4.jpg"
-              alt="imagen snack picante de camaron"
-            />
+            <img src="../img/snack4.jpg" alt="paquete de snack picante sabor camaron" />
             <div class="product-txt">
               <h3>Snack picante</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Snack con intenso sabor a camarón y textura crujiente.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -564,10 +527,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack5.jpg" alt="imagen caramelos chocolate" />
+            <img src="../img/snack5.jpg" alt="paquete de caramelos de chocolate kisses" />
             <div class="product-txt">
-              <h3>Caramelos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3>Kisses</h3>
+              <p>Chocolate blanco con trozos de galletas de chocolate.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -575,10 +538,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack6.jpg" alt="imagen pepero crunchy" />
+            <img src="../img/snack6.jpg" alt="caja de pepero crunchy" />
             <div class="product-txt">
               <h3>Pepero crunchy</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Cubiertos con una capa de chocolate y trozos crujientes.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -586,13 +549,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img
-              src="../img/snack7.jpg"
-              alt="imagen mini macarrones japoneses"
-            />
+            <img src="../img/snack7.jpg" alt="caja de mini macarrones japoneses" />
             <div class="product-txt">
               <h3>Mini macarron</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Macaron de Konjac con Sabor a Mango (congelado).</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -600,10 +560,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack8.jpg" alt="imagen mini biscochuelos" />
+            <img src="../img/snack8.jpg" alt="caja de mini biscochuelos" />
             <div class="product-txt">
               <h3>Mini biscochos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Galleta Blanda con sabor a Arándano y Fermento Láctico</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -611,10 +571,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack9.jpg" alt="imagen mini macarrones" />
+            <img src="../img/snack9.jpg" alt="caja de mini macarrones" />
             <div class="product-txt">
               <h3>Mini macarron</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Macarón de Fresa con Relleno de Fruta Liofilizada de Konjac.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -622,10 +582,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack10.jpg" alt="imagen pepero" />
+            <img src="../img/snack10.jpg" alt="caja de pepero estilo oreo" />
             <div class="product-txt">
               <h3>Pepero</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Palitos cubiertos con chocolate blanco y trozos de galleta.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -633,10 +593,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack11.jpg" alt="imagen pocky frutilla" />
+            <img src="../img/snack11.jpg" alt="caja de pocky frutilla" />
             <div class="product-txt">
               <h3>Pocky frutilla</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Palitos cubiertos con una capa de crema sabor a fresa.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -644,10 +604,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack12.jpg" alt="imagen pocky" />
+            <img src="../img/snack12.jpg" alt="caja de palitos pocky" />
             <div class="product-txt">
               <h3>Pocky</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bastoncitos de galleta sabor Matcha, cubiertos con crema.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -655,10 +615,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack13.jpg" alt="imagen pepero original" />
+            <img src="../img/snack13.jpg" alt="caja de pepero original" />
             <div class="product-txt">
               <h3>Pepero Original</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Bastoncillos clásicos de galleta cubiertos de chocolate.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -666,10 +626,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack14.jpg" alt="imagen chupetines pokemon" />
+            <img src="../img/snack14.jpg" alt="chupetines con envoltorios de pokemon" />
             <div class="product-txt">
               <h3>Chupetines</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Piruletas o chupetines con temáticas de Pokémon.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -677,10 +637,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack15.jpg" alt="imagen juguitos helados" />
+            <img src="../img/snack15.jpg" alt="bolsita de juguitos helados" />
             <div class="product-txt">
               <h3>Juguito helado</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Helado de hielo triturado con sabor uva.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -688,10 +648,10 @@
             </div>
           </div>
           <div class="box-3">
-            <img src="../img/snack16.jpg" alt="imagen caramelos limon" />
+            <img src="../img/snack16.jpg" alt="paquete de caramelos de limon" />
             <div class="product-txt">
-              <h3>Dulces acidos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3>Dulces ácidos</h3>
+              <p>Barra de caramelo masticable sabor limonada agridulce.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-5 text-danger">$500</p>
                 <a href="#" class="btn-2">Comprar</a>
@@ -700,121 +660,80 @@
           </div>
         </div>
         <div class="load-more" id="load-more-3">Cargar más</div>
+        <br />
       </section>
-      <!--galleta de la fortuna-->
-      <h2 class="text-center text-white mt-5 mb-5 fs-2 fw-bold">
-        No te olvides de la Tradicional Galleta
-      </h2>
-      <div
-        class="card-productos m-auto bg-danger-subtle flex-column justify-items-center align-items-center d-flex"
-      >
-        <img
-          src="../img/galletadelaFortuna.jpg"
-          alt="imagen galleta de la fortuna"
-        />
-        <div class="product-txt flex-column d-flex justify-content-center p-4">
-          <h3 class="text-black text-center">Galleta de la Fortuna</h3>
-          <p class="text-black text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quod.
-          </p>
-          <div class="d-flex justify-content-center">
-            <a href="#" class="btn-2 mt-4">Comprar</a>
+    </main>
+    <!--galleta de la fortuna-->
+    <section class="section-galleta py-5 d-flex flex-column m-auto">
+      <h2 class="h2 text-center text-white mb-5 fs-2 fw-bold">No te olvides de la Tradicional Galleta</h2>
+      <div data-aos="zoom-in">
+        <div class="card-galleta m-auto flex-column justify-items-center align-items-center d-flex">
+          <img src="../img/galletadelaFortuna.jpg" alt="caja de galletas de la fortuna" />
+          <div class="product-txt-galleta flex-column d-flex justify-content-center p-4">
+            <h3 class="text-white text-center">Galleta de la Fortuna</h3>
+            <p class="text-white text-center">
+              Galletas de la fortuna, conocidas por contener un mensaje o predicción en su interior.
+            </p>
+            <div class="d-flex justify-content-center">
+              <a href="#" class="btn-2 mt-4">Comprar</a>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
     <!--footer-->
-    <footer class="footer text-light py-4 mt-4 p-0">
-      <h3 class="text-center text-">Todos los Derechos Reservados</h3>
+    <footer class="footer p-3">
+      <h3 class="text-center text-dark">Todos los Derechos Reservados</h3>
       <div class="container">
-        <div
-          class="row text-center footer-content justify-content-center gap-4"
-        >
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">
-              Compañia
-            </h4>
+        <div class="row text-center justify-content-center gap-4">
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Compañía</h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Nosotros</a></li>
+              <li><a href="#" class="d-block">Nosotros</a></li>
               <li>
-                <a href="#" class="text-light d-block"
-                  >Términos y condiciones</a
-                >
+                <a href="#" class="d-block">Términos y condiciones</a>
               </li>
               <li>
-                <a href="#" class="text-light d-block"
-                  >Politica de privacidad</a
-                >
+                <a href="#" class="d-block">Política de privacidad</a>
               </li>
-              <li><a href="#" class="text-light d-block">Registrate</a></li>
+              <li><a href="#" class="d-block">Registrate</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">
-              Ayuda
-            </h4>
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Ayuda</h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Preguntas</a></li>
-              <li><a href="#" class="text-light d-block">Compras</a></li>
-              <li><a href="#" class="text-light d-block">Envios</a></li>
-              <li><a href="#" class="text-light d-block">Pagos</a></li>
+              <li><a href="#" class="d-block">Preguntas</a></li>
+              <li><a href="#" class="d-block">Compras</a></li>
+              <li><a href="#" class="d-block">Envíos</a></li>
+              <li><a href="#" class="d-block">Pagos</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">
-              Tienda
-            </h4>
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Tienda</h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Ramen</a></li>
-              <li><a href="#" class="text-light d-block">Bebidas</a></li>
-              <li><a href="#" class="text-light d-block">Snacks</a></li>
-              <li><a href="#" class="text-light d-block">Soju y Sake</a></li>
+              <li><a href="#" class="d-block">Ramen</a></li>
+              <li><a href="#" class="d-block">Bebidas</a></li>
+              <li><a href="#" class="d-block">Snacks</a></li>
+              <li><a href="#" class="d-block">Soju y Sake</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-4 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">
-              Seguinos
-            </h4>
+          <div class="col-md-4 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Seguinos</h4>
             <div class="d-flex justify-content-center gap-2">
-              <a
-                href="https://www.facebook.com/share/1B25CpnrVy/"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoFacebook.png"
-                  alt="logotipo Facebook"
+              <a href="https://www.facebook.com/share/1B25CpnrVy/" target="_blank" rel="noopener"
+                ><img class="footer-logotipo" src="../img/logoFacebook.png" alt="icono logo de Facebook"
               /></a>
-              <a
-                href="https://www.instagram.com/sarang.asia.ush/#"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoInstagram.png"
-                  alt="logotipo Instagram"
+              <a href="https://www.instagram.com/sarang.asia.ush/#" target="_blank" rel="noopener"
+                ><img class="footer-logotipo" src="../img/logoInstagram.png" alt="icono logo de Instagram"
               /></a>
               <a href="https://ar.linkedin.com" target="_blank" rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoLinkedin.png"
-                  alt="logotipo Linkedin"
+                ><img class="footer-logotipo" src="../img/logoLinkedin.png" alt="icono logo de Linkedin"
               /></a>
-              <a
-                href="https://wa.me/c/5492901300790"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoWhatsapp.png"
-                  alt="logotipo WhatsApp"
+              <a href="https://wa.me/c/5492901300790" target="_blank" rel="noopener"
+                ><img class="footer-logotipo" src="../img/logoWhatsapp.png" alt="icono logo de WhatsApp"
               /></a>
               <a href="https://g.co/kgs/TkT4aEA " target="_blank" rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoUbicacion.png"
-                  alt="logotipo ubicacion"
+                ><img class="footer-logotipo" src="../img/logoUbicacion.png" alt="icono logo de ubicacion"
               /></a>
             </div>
           </div>
@@ -822,11 +741,14 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="../js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </body>
 </html>

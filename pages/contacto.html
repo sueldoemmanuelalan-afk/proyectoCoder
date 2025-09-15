@@ -1,35 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarang</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <!--body-->
-  <body class="body-contacto">
-    <nav
-      class="navbar navbar-expand-lg bg-danger-subtle p-2 position-fixed top-0 w-100"
-    >
+  <body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg p-1 position-fixed top-0 w-100">
       <div class="container-fluid">
         <img src="../img/logoSarang.png" class="logo" alt="logotipo sarang" />
         <button
@@ -39,30 +54,19 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse flex-grow-0"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
             <li class="nav-item">
-              <a
-                class="nav-link active text-danger"
-                aria-current="page"
-                href="../index.html"
-                >Inicio</a
-              >
+              <a class="nav-link active text-danger" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/promociones.html"
-                >Promociones</a
-              >
+              <a class="nav-link" href="../pages/promociones.html">Promociones</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/contacto.html">Contacto</a>
@@ -79,147 +83,113 @@
     </nav>
     <!--header-->
     <header class="contacto-header py-5 text-start h-100">
-      <div class="h1-titulo">
-        <h1 class="display-5 fw-bold text-center">Contacto</h1>
-        <p
-          class="text-center text-black px-3 display-5 fw-bold p-product fs-3 m-auto"
-        >
-          ¿Querés hacer una consulta, pedir información o sugerir productos? En
-          esta sección encontrarás un formulario de contacto, nuestra dirección,
-          redes sociales y horarios de atención. ¡Esperamos tu mensaje!
-        </p>
+      <div class="contacto-h1">
+        <!--h1-->
+        <h1 class="display-5 fw-bold text-center animate__animated animate__rollIn">Contacto</h1>
       </div>
-      <section class="form-bg py-5">
-        <form class="m-auto p-4 rounded shadow-lg bg-light form-width">
-          <div class="text-center mb-3">
-            <img
-              src="../img/logoSarang.png"
-              alt="imagen logo Sarang"
-              class="img-fluid logo-width"
-            />
+      <section class="py-3">
+        <div class="form-iframe">
+          <!--iframe-->
+          <div class="form-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2299.5203257607973!2d-68.317141!3d-54.80597300000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c23e8fa85be41%3A0x39eed33668a5be68!2sSARANG%20tienda%20asi%C3%A1tica!5e0!3m2!1ses-419!2sar!4v1757868590001!5m2!1ses-419!2sar"
+              width="100%"
+              height="auto"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="input-container mb-3">
-            <input type="text" class="form-control" placeholder="Nombre" />
-            <i class="fa-solid fa-user"></i>
+          <!-- <p class="text-center text-white display-5 fw-normal fs-5 m-1 p-0 col-6">
+          ¿Querés hacer una consulta, pedir información o sugerir productos? En esta sección encontrarás un formulario
+          de contacto, nuestra dirección, redes sociales y horarios de atención. ¡Esperamos tu mensaje!
+          </p> -->
+          <!--form-->
+          <div class="form-contacto">
+            <form class="p-4 shadow-lg">
+              <div class="text-center mb-3">
+                <img src="../img/logoSarang.png" alt="imagen logo de Sarang" class="img-fluid logo-form-contacto" />
+              </div>
+              <div class="input-container-contacto mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="input-container-contacto mb-3">
+                <input type="password" class="form-control" placeholder="Contraseña" />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="input-container-contacto mb-3">
+                <input type="email" class="form-control" placeholder="Correo" />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="input-container-contacto mb-3">
+                <input type="tel" class="form-control" placeholder="Teléfono" />
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="mb-3 text-center">
+                <a href="../pages/login.html" class="text-decoration-none">¿Ya tienes cuenta? Inicia sesión.</a>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary" type="submit">Registrar</button>
+              </div>
+            </form>
           </div>
-          <div class="input-container mb-3">
-            <input
-              type="password"
-              class="form-control"
-              placeholder="Contraseña"
-            />
-            <i class="fa-solid fa-lock"></i>
-          </div>
-          <div class="input-container mb-3">
-            <input type="email" class="form-control" placeholder="Correo" />
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="input-container mb-3">
-            <input type="tel" class="form-control" placeholder="Teléfono" />
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div class="mb-3 text-center">
-            <a href="../pages/login.html" class="text-decoration-none"
-              >¿Ya tienes cuenta? Inicia sesión.</a
-            >
-          </div>
-          <div class="d-grid">
-            <button class="btn btn-primary" type="submit">Registrar</button>
-          </div>
-        </form>
+        </div>
       </section>
     </header>
     <!--footer-->
-    <footer class="footer text-light py-4 mt-4 p-0">
-      <h3 class="text-center text-">Todos los Derechos Reservados</h3>
+    <footer class="footer py-4 p-0">
+      <h3 class="text-center text-black">Todos los Derechos Reservados</h3>
       <div class="container">
-        <div
-          class="row text-center footer-content justify-content-center gap-4"
-        >
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">
-              Compañia
-            </h4>
+        <div class="row text-center justify-content-center gap-4">
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Compañía</h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Nosotros</a></li>
+              <li><a href="#" class="d-block">Nosotros</a></li>
               <li>
-                <a href="#" class="text-light d-block"
-                  >Términos y condiciones</a
-                >
+                <a href="#" class="d-block">Términos y condiciones</a>
               </li>
               <li>
-                <a href="#" class="text-light d-block"
-                  >Politica de privacidad</a
-                >
+                <a href="#" class="d-block">Política de privacidad</a>
               </li>
-              <li><a href="#" class="text-light d-block">Registrate</a></li>
+              <li><a href="#" class="d-block">Registrate</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">
-              Ayuda
-            </h4>
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Ayuda</h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Preguntas</a></li>
-              <li><a href="#" class="text-light d-block">Compras</a></li>
-              <li><a href="#" class="text-light d-block">Envios</a></li>
-              <li><a href="#" class="text-light d-block">Pagos</a></li>
+              <li><a href="#" class="d-block">Preguntas</a></li>
+              <li><a href="#" class="d-block">Compras</a></li>
+              <li><a href="#" class="d-block">Envíos</a></li>
+              <li><a href="#" class="d-block">Pagos</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-2 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">
-              Tienda
-            </h4>
+          <div class="col-md-2 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Tienda</h4>
             <ul class="p-0 list-unstyled fs-5">
-              <li><a href="#" class="text-light d-block">Ramen</a></li>
-              <li><a href="#" class="text-light d-block">Bebidas</a></li>
-              <li><a href="#" class="text-light d-block">Snacks</a></li>
-              <li><a href="#" class="text-light d-block">Soju y Sake</a></li>
+              <li><a href="#" class="d-block">Ramen</a></li>
+              <li><a href="#" class="d-block">Bebidas</a></li>
+              <li><a href="#" class="d-block">Snacks</a></li>
+              <li><a href="#" class="d-block">Soju y Sake</a></li>
             </ul>
           </div>
-          <div class="footer-links col-md-4 col-12">
-            <h4 class="text-secondary fw-semibold fs-3 d-inline-block">
-              Seguinos
-            </h4>
+          <div class="col-md-4 col-12">
+            <h4 class="fw-semibold fs-3 d-inline-block">Seguinos</h4>
             <div class="d-flex justify-content-center gap-2">
-              <a
-                href="https://www.facebook.com/share/1B25CpnrVy/"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoFacebook.png"
-                  alt="logotipo Facebook"
+              <a href="https://www.facebook.com/share/1B25CpnrVy/" target="_blank" rel="noopener"
+                ><img class="footer-logotipo" src="../img/logoFacebook.png" alt="icono logo de Facebook"
               /></a>
-              <a
-                href="https://www.instagram.com/sarang.asia.ush/#"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoInstagram.png"
-                  alt="logotipo Instagram"
+              <a href="https://www.instagram.com/sarang.asia.ush/#" target="_blank" rel="noopener"
+                ><img class="footer-logotipo" src="../img/logoInstagram.png" alt="icono logo de Instagram"
               /></a>
               <a href="https://ar.linkedin.com" target="_blank" rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoLinkedin.png"
-                  alt="logotipo Linkedin"
+                ><img class="footer-logotipo" src="../img/logoLinkedin.png" alt="icono logo de Linkedin"
               /></a>
-              <a
-                href="https://wa.me/c/5492901300790"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoWhatsapp.png"
-                  alt="logotipo WhatsApp"
+              <a href="https://wa.me/c/5492901300790" target="_blank" rel="noopener"
+                ><img class="footer-logotipo" src="../img/logoWhatsapp.png" alt="icono logo de WhatsApp"
               /></a>
               <a href="https://g.co/kgs/TkT4aEA " target="_blank" rel="noopener"
-                ><img
-                  class="logotipo-footer"
-                  src="../img/logoUbicacion.png"
-                  alt="logotipo ubicacion"
+                ><img class="footer-logotipo" src="../img/logoUbicacion.png" alt="icono logo de ubicacion"
               /></a>
             </div>
           </div>
@@ -227,10 +197,13 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </body>
 </html>
